@@ -1,0 +1,31 @@
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.pumpkin.min.css"
+>
+
+<nav class="container">
+  <ul>
+    <li><a href="index.html"><strong>Wave<i>FEM</i></strong></a></li>
+  </ul>
+  <ul>
+    <li><a href="about.html">About</a></li>
+    <li><a href="#">User Guide</a></li>
+    <li><a href="#">Download</a></li>
+  </ul>
+</nav>
+
+<div class="container"> 
+  <h2>About</h2>
+  <p>WaveFEM is a program that began as hobby to understand the principles of electromagnetic simulation. The core simulation
+     code is written from scratch enabling it to be highly performant and extendable. The core dependencies are GMSH for meshing,
+     EIGEN for Linear algebra and Pyvista for 3d Graphics.
+  </p>
+</div>
+
+<div class="container"> 
+  <h2>Formulation</h2>
+  <p>The program utilizes a modern approach to electromagnetic simulation using mixed-order Hierarchal vector basis
+     functions, similar to the method used by commercial solvers such as HFSS. Perfectly-Matched Layers are used for
+     implementing absorbing boundary conditions, and a near-to-far field method is used for calculating radiation patterns.
+  </p>
+</div>
