@@ -1,18 +1,16 @@
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.blue.min.css"
->
-<style>
-  .feature-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    display: block;
-  }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WaveFEM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/picocss/1.5.10/pico.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
 
 <nav class="container">
   <ul>
-    <li><a href="index.html"><strong>Wave<i>FEM   </i></strong><image src="Logo.png" width="30px"></image></a></li>
+    <li><image src="logo.svg" width="40px"></image><a href="index.html"><strong>Wave<i style="color: black;">FEM</i></strong></a></li>
   </ul>
   <ul>
     <li><a href="about.html">About</a></li>
@@ -21,62 +19,19 @@
   </ul>
 </nav>
 
-<header class="container">
-  <hgroup>
-    <h1>Wave<i>FEM</i></h1>
-    <p>Professional 3D electromagnetic simulation made affordable and accessible</p>
-  </hgroup>
-</header>
-
-<div class="container"> 
-  <p>WaveFEM is an early-stage finite element simulator for high-frequency components. It is developed
-     with the vision to become an accessible alternative to expensive commercial software without
-     sacrificing accuracy and core functionality.
-  </p>
-</div>
-
-<div class="container">
-  <div class="grid">
-    <div><image src="UI1.png" class="Grid" ></image></div>
-    <div><image src="UI2.png" class="Grid" ></image></div>
-    <div><image src="UI3.png" class="Grid" ></image></div>
-  </div>
-</div>
-<br>
-
-<div class="container"> 
-  <h2>Key Capabilities</h2>
-  <p>
-    Finite Element Method (FEM) for high-frequency simulation <br>
-    E and H field computation <br>
-    S-parameter analysis <br>
-    Radiation pattern calculation <br>
-    Built-in visualization tools <br>
-  </p>  
-</div>
-
-<div class="container">
-  <div class="grid">
-      <article>
-          <span class="feature-icon">⚙️</span>
-          <h3>1. Import & Design</h3>
-          <p>Import your CAD geometry or create complex structures using our intuitive Python scripting interface. No steep learning curves—just powerful, flexible modeling that adapts to your workflow.</p>
-      </article>
-      <article>
-          <span class="feature-icon">🚀</span>
-          <h3>2. Configure & Solve</h3>
-          <p>Define excitation ports and set optimization objectives with guided setup wizards. Hit run and let WaveFEM's adaptive algorithms handle the rest—automatically optimizing mesh and frequency sampling for maximum efficiency.</p>
-      </article>
-      <article>
-          <span class="feature-icon">💡</span>
-          <h3>3. Analyze & Export</h3>
-          <p>Explore interactive 3D field visualizations, extract S-parameters, generate SPICE models, and export professional reports. Everything you need to validate designs and move to production.</p>
-      </article>
-  </div>
-</div>
-
-<footer class="container">
-  <small>Site Maintained by Jordan Mitchell<br>
-    <strong>Contact:</strong> <a href="mailto:jormit2000@gmail.com">jormit2000@gmail.com</a>
-  </small>
-</footer>
+<body>
+    <header class="container hero-header">
+        <div class="hero-content">
+            <div class="hero-text">
+                <hgroup>
+                    <h1><image src="logo.svg" width="100px"></image>Wave<i>FEM</i></h1>
+                    <p>Fast, Parametric and Affordable Electromagnetic Simulations</p>
+                </hgroup>
+            </div>
+            <div class="hero-image">
+                <image src="Horn Sim.png"></image>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

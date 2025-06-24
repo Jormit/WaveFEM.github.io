@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="64.341515mm"
+   height="52.364456mm"
+   viewBox="0 0 64.341515 52.364456"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="marker4"
+       refX="0"
+       refY="0"
+       orient="auto"
+       markerWidth="0.69999999"
+       markerHeight="0.69999999"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 5,0 C 5,2.76 2.76,5 0,5 -2.76,5 -5,2.76 -5,0 c 0,-2.76 2.3,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path4" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Dot"
+       refX="0"
+       refY="0"
+       orient="auto"
+       markerWidth="0.69999999"
+       markerHeight="0.69999999"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 5,0 C 5,2.76 2.76,5 0,5 -2.76,5 -5,2.76 -5,0 c 0,-2.76 2.3,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path17" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker4-1"
+       refX="0"
+       refY="0"
+       orient="auto"
+       markerWidth="0.69999999"
+       markerHeight="0.69999999"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 5,0 C 5,2.76 2.76,5 0,5 -2.76,5 -5,2.76 -5,0 c 0,-2.76 2.3,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path4-5" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Dot-2"
+       refX="0"
+       refY="0"
+       orient="auto"
+       markerWidth="0.69999999"
+       markerHeight="0.69999999"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 5,0 C 5,2.76 2.76,5 0,5 -2.76,5 -5,2.76 -5,0 c 0,-2.76 2.3,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path17-7" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker4-2"
+       refX="0"
+       refY="0"
+       orient="auto"
+       markerWidth="0.69999999"
+       markerHeight="0.69999999"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 5,0 C 5,2.76 2.76,5 0,5 -2.76,5 -5,2.76 -5,0 c 0,-2.76 2.3,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path4-2" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Dot-1"
+       refX="0"
+       refY="0"
+       orient="auto"
+       markerWidth="0.69999999"
+       markerHeight="0.69999999"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 5,0 C 5,2.76 2.76,5 0,5 -2.76,5 -5,2.76 -5,0 c 0,-2.76 2.3,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path17-6" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker4-2-8"
+       refX="0"
+       refY="0"
+       orient="auto"
+       markerWidth="0.69999999"
+       markerHeight="0.69999999"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 5,0 C 5,2.76 2.76,5 0,5 -2.76,5 -5,2.76 -5,0 c 0,-2.76 2.3,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path4-2-9" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Dot-1-2"
+       refX="0"
+       refY="0"
+       orient="auto"
+       markerWidth="0.69999999"
+       markerHeight="0.69999999"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 5,0 C 5,2.76 2.76,5 0,5 -2.76,5 -5,2.76 -5,0 c 0,-2.76 2.3,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path17-6-7" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker4-2-8-2"
+       refX="0"
+       refY="0"
+       orient="auto"
+       markerWidth="0.69999999"
+       markerHeight="0.69999999"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 5,0 C 5,2.76 2.76,5 0,5 -2.76,5 -5,2.76 -5,0 c 0,-2.76 2.3,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path4-2-9-3" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Dot-1-2-3"
+       refX="0"
+       refY="0"
+       orient="auto"
+       markerWidth="0.69999999"
+       markerHeight="0.69999999"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 5,0 C 5,2.76 2.76,5 0,5 -2.76,5 -5,2.76 -5,0 c 0,-2.76 2.3,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path17-6-7-4" />
+    </marker>
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-65.173217,-73.896834)">
+    <path
+       style="display:inline;fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker4-2);marker-mid:url(#Dot-1);paint-order:normal"
+       d="m 75.40908,103.07889 c 1.95178,0.52047 22.640567,12.36122 22.640567,12.36122 L 94.666566,87.33459 Z"
+       id="path3-7" />
+    <path
+       style="display:inline;fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker4-2-8);marker-mid:url(#Dot-1-2);paint-order:normal"
+       d="m 69.35212,122.42259 c 1.95178,0.52047 28.626004,-6.89627 28.626004,-6.89627 L 75.467674,103.1651 Z"
+       id="path3-7-4" />
+    <path
+       style="display:inline;fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker4-2-8-2);marker-mid:url(#Dot-1-2-3);paint-order:normal"
+       d="m 75.496642,102.90052 c 1.95178,0.52047 19.387615,-15.614184 19.387615,-15.614184 L 79.270069,77.397361 Z"
+       id="path3-7-4-3" />
+    <path
+       style="display:inline;fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker4-1);marker-mid:url(#Dot-2);paint-order:normal"
+       d="m 98.144764,115.34507 c 1.951776,0.52047 24.332106,7.41674 24.332106,7.41674 L 114.93,96.738164 Z"
+       id="path3-4" />
+    <path
+       style="display:inline;fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker4);marker-mid:url(#Dot);paint-order:normal"
+       d="m 94.726017,87.309284 c 1.95178,0.52047 3.25296,28.105516 3.25296,28.105516 L 114.89433,96.677789 Z"
+       id="path3" />
+    <path
+       style="display:inline;fill:none;stroke:#ffffff;stroke-width:5;stroke-dasharray:none;stroke-opacity:1"
+       d="m 67.117756,103.048 c 2.238953,-2.77088 4.477985,-5.530732 6.716938,-7.653437 2.238953,-2.122604 4.477904,-3.591312 6.716938,-4.072454 2.238953,-0.481143 4.477904,0.02889 6.716857,1.414333 2.239034,1.385442 4.477986,3.635656 6.716614,6.239403 2.238953,2.603445 4.477905,5.540865 6.716857,8.145215 2.23976,2.60335 4.47872,4.85356 6.71767,6.239 2.23895,1.38544 4.4779,1.89607 6.71685,1.41453 2.23896,-0.48154 4.47791,-1.95025 6.71686,-4.07206 2.23895,-2.1228 4.47791,-4.88365 6.71686,-7.65453"
+       title="sin(x)"
+       id="path1" />
+    <path
+       style="display:inline;fill:none;stroke:#295ed7;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
+       d="m 67.117756,103.048 c 2.238953,-2.77088 4.477985,-5.530732 6.716938,-7.653437 2.238953,-2.122604 4.477904,-3.591312 6.716938,-4.072454 2.238953,-0.481143 4.477904,0.02889 6.716857,1.414333 2.239034,1.385442 4.477986,3.635656 6.716614,6.239403 2.238953,2.603445 4.477905,5.540865 6.716857,8.145215 2.23976,2.60335 4.47872,4.85356 6.71767,6.239 2.23895,1.38544 4.4779,1.89607 6.71685,1.41453 2.23896,-0.48154 4.47791,-1.95025 6.71686,-4.07206 2.23895,-2.1228 4.47791,-4.88365 6.71686,-7.65453"
+       title="sin(x)"
+       id="path5" />
+  </g>
+</svg>

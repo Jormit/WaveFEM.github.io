@@ -1,0 +1,45 @@
+:root {
+  --primary: #1e88e5 !important;
+}
+
+.hero-header {
+    padding: 4rem 0;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.hero-text h1 i {
+    color: var(--primary);
+    font-style: italic;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    max-width: 500px;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
