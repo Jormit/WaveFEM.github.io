@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="logo.svg" type="image/x-icon">
+
+    <script src="scripts.js"></script>
+
 </head>
 
 <nav class="container">
@@ -62,27 +65,35 @@
         </div>
     </section>
 
-    <div class="container" data-theme="light">
-        <h1>Clean Interface</h1>
-        <article>
-            <image class="image-container" src="gui1.png" ></image>
-             <fieldset role="group">
-                <button>></button>
-                <button>></button>
-            </fieldset>
+    <section>
+        <div class="container" data-theme="light">
+            <h1>Clean Interface</h1>
+            <p>All the information you need is a couple of clicks away...</p>
+            <article>
+                <div class="image-container">
+                    <img id="gallery-image" src="gui1.png" alt="Gallery Image">
+                </div>
+                
+                <div class="image-title" id="image-title"></div>
+                
+                <fieldset role="group" class="nav-buttons">
+                    <button id="prev-btn" onclick="previousImage()">‹</button>
+                    <span class="image-counter" id="counter">1 / 5</span>
+                    <button id="next-btn" onclick="nextImage()">›</button>
+                </fieldset>
+            </article>
+        </div>
+    </section>
 
-        </article>
-    </div>
-
     <div class="container" data-theme="light">
+        <h1>Stay Updated</h1>
         <form>
             <fieldset role="group">
                 <input name="email" type="email" placeholder="Enter your email" autocomplete="email" />
                 <input type="submit" value="Subscribe" />
             </fieldset>
         </form>
-    </div>
-
+    </div>    
 
 </body>
 
