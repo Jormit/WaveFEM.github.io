@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WaveFEM</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/picocss/1.5.10/pico.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.blue.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.svg" type="image/x-icon">
 </head>
 
 <nav class="container">
@@ -22,13 +23,7 @@
 <div class="container"> 
   <h2>About</h2>
   <p>WaveFEM is a program that began as hobby to understand the principles of electromagnetic simulation. The core simulation
-     code is written from scratch enabling it to be highly performant and extendable. The core dependencies are
-     <a href="https://gmsh.info/">GMSH</a> for meshing,
-     <a href="https://eigen.tuxfamily.org/index.php?title=Main_Page">EIGEN</a> for Linear algebra and
-     <a href="https://pyvista.org/">Pyvista</a> for 3d Graphics. For solving the sparse system, 
-     <a href="https://www.intel.com/content/www/us/en/docs/onemkl/developer-reference-fortran/2023-0/pardiso.html">Paradiso</a>
-     from the Intel MKL library is included but it may be extended to include other solvers in the future. By default it is also
-     compiled to utilize the MKL BLAS library. 
+     code is written from scratch enabling it to be highly performant and extendable.
   </p>
   
 </div>
@@ -38,12 +33,5 @@
   <p>The program utilizes a modern approach to electromagnetic simulation using Mixed-Order Hierarchal Vector Basis
      functions, similar to the method used by commercial solvers such as HFSS. Perfectly-Matched Layers are used for
      implementing absorbing boundary conditions, and a near-to-far field method is used to calculate radiation patterns.
-  </p>    
+  </p>
 </div>
-
-
-<footer class="container">
-  <small>Site Maintained by Jordan Mitchell<br>
-    <strong>Contact:</strong> <a href="mailto:jormit2000@gmail.com">jormit2000@gmail.com</a>
-  </small>
-</footer>
