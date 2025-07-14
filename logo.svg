@@ -2,13 +2,36 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="64.341515mm"
-   height="52.364456mm"
-   viewBox="0 0 64.341515 52.364456"
+   width="73.228638mm"
+   height="73.228638mm"
+   viewBox="0 0 73.228638 73.228637"
    version="1.1"
    id="svg1"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="2.8832641"
+     inkscape:cx="139.94556"
+     inkscape:cy="132.31532"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
   <defs
      id="defs1">
     <marker
@@ -172,9 +195,15 @@
          id="path17-6-7-4" />
     </marker>
   </defs>
+  <circle
+     id="path2"
+     cx="36.614319"
+     cy="36.614319"
+     style="fill:#ffffff;fill-opacity:1;stroke-width:0.236016;stroke-dasharray:none"
+     r="36.614319" />
   <g
      id="layer1"
-     transform="translate(-65.173217,-73.896834)">
+     transform="translate(-59.392003,-67.84033)">
     <path
        style="display:inline;fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker4-2);marker-mid:url(#Dot-1);paint-order:normal"
        d="m 75.40908,103.07889 c 1.95178,0.52047 22.640567,12.36122 22.640567,12.36122 L 94.666566,87.33459 Z"

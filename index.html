@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WaveFEM</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/picocss/1.5.10/pico.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.svg" type="image/x-icon">
 </head>
 
 <nav class="container">
@@ -27,54 +28,65 @@
                     <h1><image src="logo.svg" width="100px"></image>Wave<i style="color: black;">FEM</i></h1>
                     <p>Fast, Parametric and Affordable Electromagnetic Simulations</p>
                 </hgroup>
+                <a role="button" href="">Free Download</a>
             </div>
             <div class="hero-image">
-                <image src="Horn Sim.png"></image>
+                <image src="Horn Sim.png" width="500px"></image>
             </div>
         </div>
     </header>
 
 
     <section class="features-section">
-        <div class="container">
-            <div class="features-content">
-                <h2>Features</h2>
+        <div class="container" data-theme="dark">
+            <h1>Features</h1>                
+            <div class="features-grid">
+                <article>
+                    <image src="fast.svg" style="height: 200px"></image>
+                    <h3>Lightning Fast Simulations</h3>                
+                    <p>Advanced algorithms with GPU acceleration deliver results in minutes, not hours. Perfect for iterative design workflows.</p>
+                </article>
                 
-                <div class="features-grid">
-                    <div class="feature-item">
-                        <div class="feature-image">
-                            <img src="Fast.png" alt="Lightning Fast Simulations">
-                        </div>
-                        <h3>Lightning Fast Simulations</h3>
-                        <p>Advanced algorithms with GPU acceleration deliver results in minutes, not hours. Perfect for iterative design workflows.</p>
-                    </div>
-                    
-                    <div class="feature-item">
-                        <div class="feature-image">
-                            <img src="parametrics.png" alt="Parametric Design">
-                        </div>
-                        <h3>Parametric Design</h3>
-                        <p>Built-in parametric capabilities allow you to sweep variables and optimize designs automatically with intelligent parameter studies.</p>
-                    </div>
-                    
-                    <div class="feature-item">
-                        <div class="feature-image">
-                            <img src="cheap.png" alt="Affordable Solution">
-                        </div>
-                        <h3>Affordable Solution</h3>
-                        <p>Professional-grade electromagnetic simulation without the enterprise price tag. Get started for free with our community edition.</p>
-                    </div>
-                    
-                    <div class="feature-item">
-                        <div class="feature-image">
-                            <img src="integration.png" alt="Easy Integration">
-                        </div>
-                        <h3>Easy Integration</h3>
-                        <p>Seamlessly integrate with your existing CAD workflow. Import models directly and export results in standard formats.</p>
-                    </div>
-                </div>
+                <article>
+                    <image src="parametric.svg" style="height: 200px"></image>
+                    <h3>Parametric Design</h3>
+                    <p>Built-in parametric capabilities allow you to sweep variables and optimize designs automatically with intelligent parameter studies.</p>
+                </article>
+                
+                <article>
+                    <image src="integration.svg" style="height: 200px"></image>
+                    <h3>Seamless Integration</h3>
+                    <p>Integrate with your existing CAD workflow. Import models directly and export results in standard formats.</p>
+                </article>
             </div>
         </div>
     </section>
+
+    <div class="container" data-theme="light">
+        <h1>Clean Interface</h1>
+        <article>
+            <image class="image-container" src="gui1.png" ></image>
+             <fieldset role="group">
+                <button>></button>
+                <button>></button>
+            </fieldset>
+
+        </article>
+    </div>
+
+    <div class="container" data-theme="light">
+        <form>
+            <fieldset role="group">
+                <input name="email" type="email" placeholder="Enter your email" autocomplete="email" />
+                <input type="submit" value="Subscribe" />
+            </fieldset>
+        </form>
+    </div>
+
+
 </body>
+
+<footer class="container">WaveFEM © 2025</footer>
+
+
 </html>
