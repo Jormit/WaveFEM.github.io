@@ -30,7 +30,7 @@ section {
     max-width: 500px;
 }
 
-.hero-image {
+.hero-img {
     display: flex;
     justify-content: center;
     align-items: center;
