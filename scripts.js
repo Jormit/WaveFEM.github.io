@@ -1,22 +1,22 @@
  // Sample images data - replace with your actual images
 const images = [
     {
-        src: "gui1.png",
+        src: "assets/gui1.png",
         title: "Waveguide Filter E Field",
         alt: "Beautiful landscape"
     },
     {
-        src: "gui2.png", 
+        src: "assets/gui2.png", 
         title: "Waveguide Filter S-Parameters",
         alt: "City architecture"
     },
     {
-        src: "gui3.png",
+        src: "assets/gui3.png",
         title: "Pyramidal Horn Antenna E Field", 
         alt: "Nature scene"
     },
     {
-        src: "gui4.png",
+        src: "assets/gui4.png",
         title: "Pyramidal Horn Antenna Radiation Pattern",
         alt: "Abstract art"
     }

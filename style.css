@@ -3,10 +3,6 @@ section {
     margin-top: 2rem;
 }
 
-.hero-header {
-    padding: 4rem 0;
-}
-
 .hero-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -43,8 +39,7 @@ section {
 .hero-image img {
     max-width: 100%;
     height: auto;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
+    border-radius: 10px;
 }
 
 .features-section {
