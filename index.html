@@ -83,9 +83,27 @@
         <div class="container" data-theme="light">            
             <article>
                 <h2>State-of-the-Art Accuracy</h2>
-                <p>Simulation results nearly identical to commercial software (HFSS shown below). More rigorous testing to be released soon</p>
-                <image src="assets/Waveguide Filter Comparison.svg" width="700px"></image>
-                <image src="assets/Simple Path Comparison.svg" width="700px"></image>
+                <p>Simulation results matches commercial software (HFSS shown below)</p>
+                <hr />
+                <details name="Waveguide Filter" open>
+                    <summary>WR-90 X-Band Waveguide Bandpass Filter</summary>
+                    <p>S-Parameters from 10 - 12 GHz</p>
+                    <image src="assets/Waveguide Filter Comparison.svg" width="700px"></image>
+                    <p>E field magnitude at 11GHz (WaveFEM)</p>
+                    <image src="assets/Waveguide Filter Fields.svg" width="700px"></image>
+                    <p>E field magnitude at 11GHz (HFSS)</p>
+                    <image src="assets/Waveguide Filter Fields HFSS.png" width="700px"></image>
+                </details>
+                <hr />
+                <details name="PCB Line">
+                    <summary>Meandering Microstrip Line on PCB</summary>
+                    <p>S-Parameters from 3 - 5 GHz</p>
+                    <image src="assets/Simple Path Comparison.svg" width="700px"></image>
+                    <p>E field magnitude at 5GHz (WaveFEM)</p>
+                    <image src="assets/Simple Path Fields.svg" width="700px"></image>
+                    <p>E field magnitude at 5GHz (HFSS)</p>
+                    <image src="assets/Simple Path Fields HFSS.png" width="700px"></image>
+                </details>
             </article>
         </div>
     </section>
