@@ -30,7 +30,7 @@
                 </hgroup>
             </div>
             <div class="hero-image">
-                <image src="assets/Horn Sim.png" width="500px"></image>
+                <image src="assets/Hero Horn Sim.png" width="500px"></image>
             </div>
         </div>
     </header>
@@ -83,9 +83,7 @@
         <div class="container" data-theme="light">            
             <article>
                 <h2>State-of-the-Art Accuracy</h2>
-                <p>WaveFEM delivers exceptional accuracy across a wide range of electromagnetic simulation scenarios. Our advanced finite element method implementation consistently produces results that match or exceed those from industry-standard commercial software packages. The validation examples below demonstrate our solver's precision in handling complex geometries, material properties, and frequency-dependent behaviors.</p>
-                
-                <p>Our simulation engine incorporates sophisticated numerical techniques including higher-order basis functions, adaptive mesh refinement, and robust error estimation algorithms to ensure reliable convergence and accurate field solutions. These capabilities enable engineers to trust WaveFEM for critical design decisions in demanding applications.</p>
+                <p>WaveFEM delivers exceptional accuracy across a wide range of electromagnetic simulation scenarios. Our advanced finite element method implementation consistently produces results that match those from industry-standard commercial software packages.</p>
                 
                 <hr />
                 
@@ -94,15 +92,12 @@
                     <p>This validation case demonstrates WaveFEM's accuracy in simulating resonant cavity structures. The WR-90 X-band waveguide filter represents a challenging test case due to its complex resonant behavior and sharp frequency response characteristics.</p>
                     
                     <p><strong>S-Parameters from 10 - 12 GHz</strong></p>
-                    <p>The comparison shows excellent agreement between WaveFEM and HFSS across the entire frequency band, with particularly accurate representation of the passband characteristics, rejection levels, and transition regions.</p>
                     <image src="assets/Waveguide Filter Comparison.svg" width="700px"></image>
                     
                     <p><strong>E field magnitude at 11GHz (WaveFEM)</strong></p>
-                    <p>The field distribution reveals the expected resonant modes within the cavity structure, showing proper field concentration and nulls at the appropriate locations.</p>
                     <image src="assets/Waveguide Filter Fields.svg" width="700px"></image>
                     
                     <p><strong>E field magnitude at 11GHz (HFSS)</strong></p>
-                    <p>The HFSS reference solution confirms the accuracy of WaveFEM's field computation, with identical field patterns and magnitude distributions.</p>
                     <image src="assets/Waveguide Filter Fields HFSS.png" width="700px"></image>
                 </details>
                 
@@ -113,15 +108,12 @@
                     <p>This validation demonstrates WaveFEM's capability in handling planar transmission line structures on printed circuit boards. The meandering microstrip presents challenges including substrate effects, conductor losses, and complex current distributions around bends and discontinuities.</p>
                     
                     <p><strong>S-Parameters from 3 - 5 GHz</strong></p>
-                    <p>The frequency response comparison shows WaveFEM accurately captures the transmission characteristics, including insertion loss, return loss, and phase response of the microstrip structure.</p>
                     <image src="assets/Simple Path Comparison.svg" width="700px"></image>
                     
                     <p><strong>E field magnitude at 5GHz (WaveFEM)</strong></p>
-                    <p>The field visualization reveals proper electromagnetic field confinement around the microstrip conductor and realistic field enhancement at discontinuities and corners.</p>
                     <image src="assets/Simple Path Fields.svg" width="700px"></image>
                     
                     <p><strong>E field magnitude at 5GHz (HFSS)</strong></p>
-                    <p>The HFSS reference confirms WaveFEM's accurate field computation, showing identical field distributions and proper modeling of substrate effects.</p>
                     <image src="assets/Simple Path Fields HFSS.png" width="700px"></image>
                     
                     <p><strong>Adaptive Mesh Refinement Technology</strong></p>
@@ -131,13 +123,20 @@
                 </details>
                 
                 <hr />
-                
-                <div class="validation-summary">
-                    <h3>Validation Summary</h3>
-                    <p>These comprehensive validation cases demonstrate WaveFEM's reliability across diverse electromagnetic simulation challenges. Our commitment to accuracy ensures that engineers can confidently use WaveFEM for mission-critical designs, from high-frequency waveguide components to complex PCB structures.</p>
+
+                <details name="PCB Line">
+                    <summary>Horn Antenna</summary>
+                    <p>This validation demonstrates WaveFEM's capability in handling planar transmission line structures on printed circuit boards. The meandering microstrip presents challenges including substrate effects, conductor losses, and complex current distributions around bends and discontinuities.</p>
                     
-                    <p>The consistent agreement with industry-standard reference solutions, combined with our advanced adaptive algorithms, positions WaveFEM as a powerful and trustworthy tool for electromagnetic design and analysis.</p>
-                </div>
+                    <p><strong>E field magnitude at 4GHz (WaveFEM)</strong></p>
+                    <image src="assets/Horn Fields.svg" width="700px"></image>
+                    
+                    <p><strong>E field magnitude at 4GHz (HFSS)</strong></p>
+                    <image src="assets/Horn Fields HFSS.png" width="700px"></image>
+                    
+                    <p><strong>Radiation Pattern</strong></p>
+                    <image src="assets/Horn Directivity Comparison.svg" width="700px"></image>
+                </details>
             </article>
         </div>
     </section>
