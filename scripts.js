@@ -3,22 +3,22 @@ const images = [
     {
         src: "assets/gui1.png",
         title: "Waveguide Filter E Field",
-        alt: "Beautiful landscape"
+        alt: "Waveguide Filter E Field"
     },
     {
         src: "assets/gui2.png", 
         title: "Waveguide Filter S-Parameters",
-        alt: "City architecture"
+        alt: "Waveguide Filter S-Parameters"
     },
     {
         src: "assets/gui3.png",
         title: "Pyramidal Horn Antenna E Field", 
-        alt: "Nature scene"
+        alt: "Pyramidal Horn Antenna E Field"
     },
     {
-        src: "assets/gui4.png",
+        src: "assets/gui5.png",
         title: "Pyramidal Horn Antenna Radiation Pattern",
-        alt: "Abstract art"
+        alt: "Pyramidal Horn Antenna Radiation Pattern"
     }
 ];
 
