@@ -16,8 +16,8 @@ const images = [
     },
     {
         src: "assets/gui4.png",
-        title: "Support for PCB Importing",
-        alt: "Support for PCB Importing"
+        title: "Automatic Adaptive Meshing",
+        alt: "Automatic Adaptive Meshing"
     },
     {
         src: "assets/gui5.png",
