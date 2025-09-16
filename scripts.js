@@ -1,33 +1,33 @@
 const images = [
     {
         src: "assets/gui1.png",
-        title: "Series fed Patch Array 3D Farfield",
-        alt: "Series fed Patch Array 3D Farfield"
+        title: "3D Farfield Plot",
+        alt: "3D Farfield Plot"
     },
     {
         src: "assets/gui2.png", 
-        title: "Waveguide Filter E-Field",
-        alt: "Waveguide Filter E-Field"
+        title: "E-Field Visualization",
+        alt: "E-Field Visualization"
     },
     {
         src: "assets/gui3.png",
-        title: "Waveguide Filter S-Parameters", 
-        alt: "Waveguide Filter S-Parameters"
+        title: "S-Parameter Plot", 
+        alt: "S-Parameter Plot"
     },
     {
         src: "assets/gui4.png",
-        title: "Microstrip Stepped Impedance Filter",
-        alt: "Microstrip Stepped Impedance Filter"
+        title: "Support for PCB Importing",
+        alt: "Support for PCB Importing"
     },
     {
         src: "assets/gui5.png",
-        title: "Microstrip Stackup Editor",
-        alt: "Microstrip Stackup Editor"
+        title: "Integrated Stackup Editor",
+        alt: "Integrated Stackup Editor"
     },
     {
         src: "assets/gui6.png",
-        title: "Ridged Waveguide Horn Antenna Excitation",
-        alt: "Ridged Waveguide Horn Antenna Excitation"
+        title: "2D port solutions",
+        alt: "2D port solutions"
     }
 ];
 
