@@ -1,4 +1,3 @@
- // Sample images data - replace with your actual images
 const images = [
     {
         src: "assets/gui1.png",
@@ -33,6 +32,26 @@ const images = [
 ];
 
 let currentIndex = 0;
+let preloadedImages = [];
+
+// Prefetch all images
+function prefetchImages() {
+    images.forEach((imageData, index) => {
+        const img = new Image();
+        img.src = imageData.src;
+        preloadedImages[index] = img;
+        
+        // Optional: Add error handling
+        img.onerror = function() {
+            console.warn(`Failed to preload image: ${imageData.src}`);
+        };
+        
+        // Optional: Add load event for debugging
+        img.onload = function() {
+            console.log(`Preloaded image: ${imageData.src}`);
+        };
+    });
+}
 
 function updateGallery() {
     const img = document.getElementById('gallery-image');
@@ -41,8 +60,12 @@ function updateGallery() {
     const prevBtn = document.getElementById('prev-btn');
     const nextBtn = document.getElementById('next-btn');
     
-    // Update image
-    img.src = images[currentIndex].src;
+    // Update image - use preloaded image if available
+    if (preloadedImages[currentIndex] && preloadedImages[currentIndex].complete) {
+        img.src = preloadedImages[currentIndex].src;
+    } else {
+        img.src = images[currentIndex].src;
+    }
     img.alt = images[currentIndex].alt;
     
     // Update title
@@ -80,5 +103,9 @@ document.addEventListener('keydown', function(e) {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Start prefetching images immediately
+    prefetchImages();
+    
+    // Initialize gallery
     updateGallery();
 });
