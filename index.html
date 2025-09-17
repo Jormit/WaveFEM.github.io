@@ -79,65 +79,56 @@
 
     <section>
         <div class="container" data-theme="light">            
-            <article>
+            
                 <h2>State-of-the-Art Accuracy</h2>
                 <p>WaveFEM delivers exceptional accuracy across a wide range of electromagnetic simulation scenarios. Our advanced finite element method implementation consistently produces results that match those from industry-standard commercial software packages.</p>
-                
-                <hr />
-                
-                <details name="Waveguide Filter">
-                    <summary>WR-90 X-Band Waveguide Bandpass Filter</summary>
-                    <p>This validation case demonstrates WaveFEM's accuracy in simulating resonant cavity structures. The WR-90 X-band waveguide filter represents a challenging test case due to its complex resonant behavior and sharp frequency response characteristics.</p>
-                    
-                    <p><strong>S-Parameters from 10 - 12 GHz</strong></p>
-                    <image src="assets/Waveguide Filter Comparison.svg" width="700px"></image>
-                    
-                    <p><strong>E field magnitude at 11GHz (WaveFEM)</strong></p>
-                    <image src="assets/Waveguide Filter Fields.svg" width="700px"></image>
-                    
-                    <p><strong>E field magnitude at 11GHz (HFSS)</strong></p>
-                    <image src="assets/Waveguide Filter Fields HFSS.png" width="700px"></image>
-                </details>
-                
-                <hr />
-                
-                <details name="PCB Line">
-                    <summary>Meandering Microstrip Line on PCB</summary>
-                    <p>This validation demonstrates WaveFEM's capability in handling planar transmission line structures on printed circuit boards. The meandering microstrip presents challenges including substrate effects, conductor losses, and complex current distributions around bends and discontinuities.</p>
-                    
-                    <p><strong>S-Parameters from 3 - 5 GHz</strong></p>
-                    <image src="assets/Simple Path Comparison.svg" width="700px"></image>
-                    
-                    <p><strong>E field magnitude at 5GHz (WaveFEM)</strong></p>
-                    <image src="assets/Simple Path Fields.svg" width="700px"></image>
-                    
-                    <p><strong>E field magnitude at 5GHz (HFSS)</strong></p>
-                    <image src="assets/Simple Path Fields HFSS.png" width="700px"></image>
-                    
-                    <p><strong>Adaptive Mesh Refinement Technology</strong></p>
-                    <p>WaveFEM's intelligent adaptive mesh refinement has been employed in this simulation to optimize computational efficiency while maintaining accuracy. The solver automatically identifies regions requiring higher mesh density through a robust error estimation algorithm, concentrating computational resources where they're needed most.</p>
-                    
-                    <image src="assets/Simple Path Mesh Refinement.svg" width="700px"></image>
-                </details>
-                
-                <hr />
 
-                <details name="Horn Antenna">
-                    <summary>Horn Antenna</summary>
-                    <p>This validation case showcases WaveFEM's performance in simulating antenna radiation characteristics. The horn antenna simulation demonstrates the software's ability to accurately model electromagnetic field distributions and radiation patterns in antenna structures.</p>
-                    
-                    <p><strong>E field magnitude at 4GHz (WaveFEM)</strong></p>
-                    <image src="assets/Horn Fields.svg" width="700px"></image>
-                    
-                    <p><strong>E field magnitude at 4GHz (HFSS)</strong></p>
-                    <image src="assets/Horn Fields HFSS.png" width="700px"></image>
-                    
-                    <p><strong>Radiation Pattern</strong></p>
-                    <image src="assets/Horn Directivity Comparison.svg" width="700px"></image>
-                </details>
-            </article>
+                <div class="grid">
+                    <article>
+                        <p><strong>Waveguide Filter Comparison</strong></p>
+                        <image src="assets/Waveguide Filter Comparison.svg" width="700px"></image>                        
+                    </article>
+
+                    <article>
+                        <p><strong>Horn Antenna Radiation Pattern Comparison</strong></p>
+                        <image src="assets/Horn Directivity Comparison.svg" width="700px"></image>                  
+                    </article>
+                </div>
+
+                <p>More in-depth validations coming soon</p>
         </div>
     </section>
+
+<section>
+    <div class="container">
+        <h2>Applications</h2>
+        <p>WaveFEM is designed to handle a wide range of electromagnetic simulation challenges across multiple industries and research domains.</p>
+        
+        <div class="grid">
+            <article>
+                <h3>High-Speed PCB Design</h3>
+                <p>Analyze signal integrity, crosstalk, and transmission lines in multi-layer PCBs for 5G and high-speed digital applications.</p>
+            </article>
+            
+            <article>
+                <h3>Semiconductor Design</h3>
+                <p>Simulate MMICs, RF chips, and packaging interconnects with accurate parasitic modeling and high-frequency performance analysis.</p>
+            </article>
+            
+            <article>
+                <h3>Antenna Design</h3>
+                <p>Design patch antennas and antenna arrays with radiation pattern prediction and MIMO coupling analysis.</p>
+            </article>
+            
+            <article>
+                <h3>Waveguide Filters</h3>
+                <p>Simulate bandpass filters and multiplexers with precise S-parameter calculations for satellite and radar systems.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+
 
 </body>
 
