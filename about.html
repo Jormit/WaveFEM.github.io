@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WaveFEM is a 3D high frequency electromagnetic simulation package with lightning-fast performance, parametric design capabilities, and seamless integration with 3D models and manufacturing formats.">
-    <title>WaveFEM | 3D High Frequency Electromagnetic Simulation</title>
+    <title>About | WaveFEM | 3D High Frequency Electromagnetic Simulation</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.blue.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/logo.svg" type="image/x-icon">
-    <script src="scripts.js"></script>
 </head>
 
 <nav class="container">
@@ -17,30 +16,42 @@
   </ul>
   <ul>
     <li><a href="about.html">About</a></li>
+    <li><a href="examples.html">Examples</a></li>
   </ul>
 </nav>
 
-<div class="container">
-  <article>
-    <h2>About</h2>
-    <p>WaveFEM began as a hobby to understand electromagnetic simulation. We wrote the core simulation kernel from scratch, making it highly performant and easy to extend. Without the high overhead of a large company, we can offer this powerful software at a fraction of the cost, making it ideal for students and hobbyists.</p>
-  </article>
-</div>
+<body>
+  <div class="container">
+    <article>
+      <h2>About</h2>
+      <p>WaveFEM began as a hobby to understand electromagnetic simulation. We wrote the core simulation kernel from scratch, making it highly performant and easy to extend. Without the high overhead of a large company, we can offer this powerful software at a fraction of the cost, making it ideal for students and hobbyists.</p>
+    </article>
+  </div>
 
-<div class="container">
-  <article>
-    <h2>Roadmap</h2>
-    <p>The core simulation code is finished and includes the following features:</p>
-    <ul>
-      <li>3D Field Solver with integrated meshing and adaptive mesh refinement</li>
-      <li>Radiation boundaries using Perfectly Matched Layers (PMLs)</li>
-      <li>Far-field computation via an integrated near-to-far-field transformation</li>
-      <li>Fast vector fitting for interpolating frequency sweeps</li>
-      <li>Support for importing multi-object .step files, as well as planar formats like .gds and .dxf, with a built-in substrate editor</li>
-      <li>Lumped and wave ports</li>
-      <li>Integrated 2D eigensolver that supports both TEM and TE modes</li>
-      <li>A GUI for material and port assignment</li>
-      <li>Parametric models defined using CadQuery scripts</li>
-    </ul>
-  </article>
-</div>
+  <div class="container">
+    <article>
+      <h2>Roadmap</h2>
+      <p>The core simulation code is finished and includes the following features:</p>
+      <ul>
+        <li>3D Field Solver with integrated meshing and adaptive mesh refinement</li>
+        <li>Radiation boundaries using Perfectly Matched Layers (PMLs)</li>
+        <li>Far-field computation via an integrated near-to-far-field transformation</li>
+        <li>Fast vector fitting for interpolating frequency sweeps</li>
+        <li>Support for importing multi-object .step files, as well as planar formats like .gds and .dxf, with a built-in substrate editor</li>
+        <li>Lumped and wave ports</li>
+        <li>Integrated 2D eigensolver that supports both TEM and TE modes</li>
+        <li>A GUI for material and port assignment</li>
+        <li>Parametric models defined using CadQuery scripts</li>
+      </ul>
+    </article>
+  </div>
+</body>
+
+<footer class="container">
+  <small>Site Maintained by Jordan Mitchell<br>
+    <strong>Contact:</strong> <a href="mailto:jormit2000@gmail.com">jormit2000@gmail.com</a>
+  </small>
+</footer>
+
+
+</html>

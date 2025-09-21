@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WaveFEM Examples - Explore electromagnetic simulation examples including horn antennas, waveguide filters, patch antennas, and more.">
+    <title>Examples | WaveFEM | 3D High Frequency Electromagnetic Simulation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.blue.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.svg" type="image/x-icon">
+    <script src="scripts.js"></script>
+</head>
+
+<nav class="container">
+  <ul>
+    <li><image src="assets/logo.svg" width="40px"></image><a href="index.html"><strong>Wave<i style="color: black;">FEM</i></strong></a></li>
+  </ul>
+  <ul>
+    <li><a href="about.html">About</a></li>
+    <li><a href="examples.html">Examples</a></li>
+  </ul>
+</nav>
+
+<body>
+    <header class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <hgroup>
+                    <h1>Simulation Examples</h1>
+                    <p>Explore the capabilities of WaveFEM across various electromagnetic simulation scenarios</p>
+                </hgroup>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container" data-theme="light">
+            <h2>Horn Antenna</h2>
+            <p>High-gain directional antenna commonly used in radar and satellite communications. This example demonstrates far-field radiation pattern analysis and gain calculations.</p>
+            
+            <div class="grid">
+                <article>
+                    <h4>3D Geometry</h4>
+                    <div>
+                        <image src="assets/comparisons/Horn Geometry.svg" width="700px"></image>
+                    </div>
+                </article>
+
+                <article>
+                    <h4>3D Field</h4>
+                    <div>
+                        <image src="assets/comparisons/Horn 3D Field.svg" width="700px"></image>
+                    </div>
+                </article>               
+            </div>
+            
+            <div class="grid">
+                <article>
+                    <h4>S-Parameters</h4>
+                    <div>
+                        <image src="assets/comparisons/Horn S11.svg" width="700px"></image>
+                    </div>
+                </article>
+                
+                <article>
+                    <h4>Radiation Pattern</h4>
+                    <div>
+                        <image src="assets/comparisons/Horn Directivity Comparison.svg" width="700px"></image>
+                    </div>
+                </article>                
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" data-theme="light">
+            <h2>Waveguide Bandpass Filter</h2>
+            <p>Multi-cavity waveguide filter for satellite communication systems. Shows precise S-parameter modeling and field distribution analysis.</p>
+            
+            <div class="grid">
+                <article>
+                    <h4>3D Geometry</h4>
+                    <div>
+                        <image src="assets/comparisons/Waveguide Filter Geometry.svg" width="700px"></image>
+                    </div>
+                </article>
+
+                <article>
+                    <h4>3D Field</h4>
+                    <div>
+                        <image src="assets/comparisons/Waveguide Filter 3D Field.svg" width="700px"></image>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="grid">
+                <article>
+                    <h4>S-Parameters Magnitude</h4>
+                    <div>
+                        <image src="assets/comparisons/Waveguide Filter Comparison.svg" width="700px"></image>
+                    </div>
+                </article>
+                
+                <article>
+                    <h4>S-Parameters Phase</h4>
+                    <div>
+                        <image src="assets/comparisons/Waveguide Filter Phase Comparison.svg" width="700px"></image>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" data-theme="light">
+            <h2>Microstrip Patch Antenna</h2>
+            <p>Compact planar antenna for wireless communication applications. Demonstrates substrate effects and surface current analysis.</p>
+            
+            <div class="grid">
+                <article>
+                    <h4>3D Geometry</h4>
+                    <div>
+                        <image src="assets/comparisons/Patch Geometry.svg" width="700px"></image>
+                    </div>
+                </article>
+
+                <article>
+                    <h4>3D Field</h4>
+                    <div>
+                        <image src="assets/comparisons/Patch 3D Field.svg" width="700px"></image>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="grid">
+                <article>
+                    <h4>S-Parameters</h4>
+                    <div>
+                        <image src="assets/comparisons/Patch S11 Comparison.svg" width="700px"></image>
+                    </div>
+                </article>
+                
+                <article>
+                    <h4>Radiation Pattern</h4>
+                    <div>
+                        <image src="assets/comparisons/Patch Directivity Comparison.svg" width="700px"></image>
+                    </div>
+                </article>                
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" data-theme="light">
+            <h2>Coupled Line Filter</h2>
+            <p>Coupled Line filter for C-Band. Difficult example that requires robust mesh refinement for high accuracy.</p>
+            
+            <div class="grid">
+                <article>
+                    <h4>3D Geometry</h4>
+                    <div>
+                        <image src="assets/comparisons/Coupled Line Filter Geometry.svg" width="700px"></image>
+                    </div>
+                </article>
+
+                <article>
+                    <h4>3D Field</h4>
+                    <div>
+                        <image src="assets/comparisons/Coupled Line Filter 3D Field.svg" width="700px"></image>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="grid">
+                <article>
+                    <h4>S-Parameters Magnitude</h4>
+                    <div>
+                        <image src="assets/comparisons/Coupled Line Filter Comparison.svg" width="700px"></image>
+                    </div>
+                </article>
+                
+                <article>
+                    <h4>S-Parameters Phase</h4>
+                    <div>
+                        <image src="assets/comparisons/Coupled Line Filter Phase Comparison.svg" width="700px"></image>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" data-theme="light">
+            <div style="text-align: center; padding: 2rem 0;">
+                <h3>Ready to Try WaveFEM?</h3>
+                <p>Experience these simulations and more with WaveFEM's intuitive interface and powerful solver.</p>
+                <b>Beta version releasing soon!</b>
+            </div>
+        </div>
+    </section>
+</body>
+
+<footer class="container">
+  <small>Site Maintained by Jordan Mitchell<br>
+    <strong>Contact:</strong> <a href="mailto:jormit2000@gmail.com">jormit2000@gmail.com</a>
+  </small>
+</footer>
+
+</html>
