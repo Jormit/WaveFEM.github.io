@@ -28,6 +28,7 @@
                 <hgroup>
                     <h1>Simulation Examples</h1>
                     <p>Explore the capabilities of WaveFEM across various electromagnetic simulation scenarios</p>
+                    <p>All simulation results are compared against Ansys HFSS, an industry standard electromagnetic simulator, demonstrating WaveFEM's accuracy and reliability.</p>
                 </hgroup>
             </div>
         </div>
@@ -36,7 +37,7 @@
     <section>
         <div class="container" data-theme="light">
             <h2>Horn Antenna</h2>
-            <p>High-gain directional antenna commonly used in radar and satellite communications. This example demonstrates far-field radiation pattern analysis and gain calculations.</p>
+            <p>Pyramidal horn antenna operating from 4-5 GHz for radar and satellite communications. Demonstrates accurate far-field radiation pattern analysis and gain calculations.</p>
             
             <div class="grid">
                 <article>
@@ -75,7 +76,7 @@
     <section>
         <div class="container" data-theme="light">
             <h2>Waveguide Bandpass Filter</h2>
-            <p>Multi-cavity waveguide filter for satellite communication systems. Shows precise S-parameter modeling and field distribution analysis.</p>
+            <p>Multi-cavity X-band waveguide filter centered at 11 GHz for satellite communications. Shows precise S-parameter modeling of resonant cavity coupling.</p>
             
             <div class="grid">
                 <article>
@@ -114,7 +115,7 @@
     <section>
         <div class="container" data-theme="light">
             <h2>Microstrip Patch Antenna</h2>
-            <p>Compact planar antenna for wireless communication applications. Demonstrates substrate effects and surface current analysis.</p>
+            <p>Compact planar patch antenna for 2.4 GHz ISM band wireless applications. Demonstrates substrate effects and surface wave modeling.</p>
             
             <div class="grid">
                 <article>
@@ -153,7 +154,7 @@
     <section>
         <div class="container" data-theme="light">
             <h2>Coupled Line Filter</h2>
-            <p>Coupled Line filter for C-Band. Difficult example that requires robust mesh refinement for high accuracy.</p>
+            <p>Microstrip coupled-line bandpass filter operating from 5-7 GHz. Requires robust mesh refinement to accurately capture strong electromagnetic coupling between lines.</p>
             
             <div class="grid">
                 <article>
@@ -192,7 +193,7 @@
     <section>
         <div class="container" data-theme="light">
             <h2>Series Fed Patch Array</h2>
-            <p>Series fed patch array antenna for 28 GHz millimeter-wave applications. Complex structure requiring fine mesh discretization for accurate modeling of mutual coupling effects and radiation patterns.</p>
+            <p>8-element series-fed patch array for 28 GHz millimeter-wave 5G applications. Requires fine mesh discretization for accurate mutual coupling and radiation pattern modeling. <em>Note: Both simulations did not converge to 0.02 delta S due to memory limitations.</em></p>
             
             <div class="grid">
                 <article>
