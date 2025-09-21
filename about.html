@@ -21,30 +21,104 @@
 </nav>
 
 <body>
-  <div class="container">
-    <article>
-      <h2>About</h2>
-      <p>WaveFEM began as a hobby to understand electromagnetic simulation. We wrote the core simulation kernel from scratch, making it highly performant and easy to extend. Without the high overhead of a large company, we can offer this powerful software at a fraction of the cost, making it ideal for students and hobbyists.</p>
-    </article>
-  </div>
+    <header class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <hgroup>
+                    <h1>About</h1>
+                    <p>WaveFEM began as a hobby to understand electromagnetic simulation. We wrote the core simulation kernel from scratch, making it highly performant and easy to extend. Without the high overhead of a large company, we can offer this powerful software at a fraction of the cost, making it ideal for students, researchers, and engineers.</p>
+                </hgroup>
+            </div>
+        </div>
+    </header>    
 
-  <div class="container">
-    <article>
-      <h2>Roadmap</h2>
-      <p>The core simulation code is finished and includes the following features:</p>
-      <ul>
-        <li>3D Field Solver with integrated meshing and adaptive mesh refinement</li>
-        <li>Radiation boundaries using Perfectly Matched Layers (PMLs)</li>
-        <li>Far-field computation via an integrated near-to-far-field transformation</li>
-        <li>Fast vector fitting for interpolating frequency sweeps</li>
-        <li>Support for importing multi-object .step files, as well as planar formats like .gds and .dxf, with a built-in substrate editor</li>
-        <li>Lumped and wave ports</li>
-        <li>Integrated 2D eigensolver that supports both TEM and TE modes</li>
-        <li>A GUI for material and port assignment</li>
-        <li>Parametric models defined using CadQuery scripts</li>
-      </ul>
-    </article>
-  </div>
+    <section>
+        <div class="container" data-theme="light">
+            <h2>Core Features</h2>
+            <p>The core simulation code is finished and includes comprehensive electromagnetic simulation capabilities designed for accuracy and performance.</p>
+            
+            <div class="grid">
+                <article>
+                    <h4>3D Field Solver</h4>
+                    <div>
+                        <p>Integrated meshing and adaptive mesh refinement for optimal accuracy and computational efficiency across complex geometries.</p>
+                    </div>
+                </article>
+
+                <article>
+                    <h4>Radiation Boundaries</h4>
+                    <div>
+                        <p>Perfectly Matched Layers (PMLs) provide accurate absorption of outgoing waves for open-region electromagnetic problems.</p>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="grid">
+                <article>
+                    <h4>Far-Field Computation</h4>
+                    <div>
+                        <p>Integrated near-to-far-field transformation enables accurate antenna pattern and RCS calculations from near-field data.</p>
+                    </div>
+                </article>
+                
+                <article>
+                    <h4>Fast Vector Fitting</h4>
+                    <div>
+                        <p>Advanced interpolation techniques for efficient frequency sweeps, reducing simulation time while maintaining accuracy.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" data-theme="light">
+            <h2>Import & Design Tools</h2>
+            <p>Seamless integration with industry-standard CAD formats and powerful parametric design capabilities for rapid prototyping and optimization.</p>
+            
+            <div class="grid">
+                <article>
+                    <h4>Multi-Format Support</h4>
+                    <div>
+                        <p>Import multi-object .step files, planar formats like .gds and .dxf, with a built-in substrate editor for complete design flexibility.</p>
+                    </div>
+                </article>
+
+                <article>
+                    <h4>Port Configuration</h4>
+                    <div>
+                        <p>Comprehensive lumped and wave port support with integrated 2D eigensolver for both TEM and TE mode analysis.</p>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="grid">
+                <article>
+                    <h4>Material Assignment GUI</h4>
+                    <div>
+                        <p>Intuitive graphical interface for material and port assignment, streamlining the simulation setup process.</p>
+                    </div>
+                </article>
+                
+                <article>
+                    <h4>Parametric Modeling</h4>
+                    <div>
+                        <p>Create sophisticated parametric models using CadQuery scripts for design optimization and sensitivity analysis.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" data-theme="light">
+            <div style="text-align: center; padding: 2rem 0;">
+                <h3>Ready to Experience WaveFEM?</h3>
+                <p>Join the next generation of electromagnetic simulation with our powerful, affordable solution.</p>
+                <b>Beta version releasing soon!</b>
+            </div>
+        </div>
+    </section>
 </body>
 
 <footer class="container">
@@ -52,6 +126,5 @@
     <strong>Contact:</strong> <a href="mailto:jormit2000@gmail.com">jormit2000@gmail.com</a>
   </small>
 </footer>
-
 
 </html>
