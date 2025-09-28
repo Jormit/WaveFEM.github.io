@@ -10,22 +10,27 @@ const images = [
         alt: "E-Field Visualization"
     },
     {
-        src: "assets/gui/gui3.png",
+        src: "assets/gui/gui3.gif",
+        title: "Parametric Designs", 
+        alt: "Parametric Designs"
+    },
+    {
+        src: "assets/gui/gui4.png",
         title: "S-Parameter Plot", 
         alt: "S-Parameter Plot"
     },
     {
-        src: "assets/gui/gui4.png",
+        src: "assets/gui/gui5.png",
         title: "Automatic Adaptive Meshing",
         alt: "Automatic Adaptive Meshing"
     },
     {
-        src: "assets/gui/gui5.png",
+        src: "assets/gui/gui6.png",
         title: "Integrated Stackup Editor",
         alt: "Integrated Stackup Editor"
     },
     {
-        src: "assets/gui/gui6.png",
+        src: "assets/gui/gui7.png",
         title: "2D port solutions",
         alt: "2D port solutions"
     }
