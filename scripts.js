@@ -1,11 +1,11 @@
 const images = [
     {
-        src: "assets/gui/gui1.png",
+        src: "assets/gui/gui1.webp",
         title: "3D Farfield Plot",
         alt: "3D Farfield Plot"
     },
     {
-        src: "assets/gui/gui2.png", 
+        src: "assets/gui/gui2.webp", 
         title: "E-Field Visualization",
         alt: "E-Field Visualization"
     },
@@ -15,22 +15,22 @@ const images = [
         alt: "Parametric Designs"
     },
     {
-        src: "assets/gui/gui4.png",
+        src: "assets/gui/gui4.webp",
         title: "S-Parameter Plot", 
         alt: "S-Parameter Plot"
     },
     {
-        src: "assets/gui/gui5.png",
+        src: "assets/gui/gui5.webp",
         title: "Automatic Adaptive Meshing",
         alt: "Automatic Adaptive Meshing"
     },
     {
-        src: "assets/gui/gui6.png",
+        src: "assets/gui/gui6.webp",
         title: "Integrated Stackup Editor",
         alt: "Integrated Stackup Editor"
     },
     {
-        src: "assets/gui/gui7.png",
+        src: "assets/gui/gui7.webp",
         title: "2D port solutions",
         alt: "2D port solutions"
     }
