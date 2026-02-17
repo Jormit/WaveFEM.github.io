@@ -1,6 +1,6 @@
 const images = [
     {
-        src: "assets/gui/gui1.webp",
+        src: "assets/gui/gui1.png",
         title: "3D Farfield Plot",
         alt: "3D Farfield Plot"
     },
@@ -10,7 +10,7 @@ const images = [
         alt: "E-Field Visualization"
     },
     {
-        src: "assets/gui/gui3.gif",
+        src: "assets/gui/gui3.webp",
         title: "Parametric Designs", 
         alt: "Parametric Designs"
     },
