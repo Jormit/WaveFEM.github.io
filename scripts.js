@@ -33,6 +33,11 @@ const images = [
         src: "assets/gui/gui7.webp",
         title: "2D port solutions",
         alt: "2D port solutions"
+    },
+    {
+        src: "assets/gui/gui8.webp",
+        title: "SBR Ray Tracing (Coming Soon)",
+        alt: "SBR Ray Tracing (Coming Soon)"
     }
 ];
 
