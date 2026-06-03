@@ -1,0 +1,306 @@
+---
+layout: base.njk
+title: Examples
+description: WaveFEM Examples - Explore electromagnetic simulation examples including horn antennas, waveguide filters, patch antennas, and more.
+scripts: true
+permalink: /examples.html
+---
+
+<header class="container">
+    <div class="hero-content">
+        <div class="hero-text">
+            <hgroup>
+                <h1>Examples</h1>
+                <p>Explore the capabilities of WaveFEM across various electromagnetic simulation scenarios</p>
+                <p>All simulation results are compared against Ansys HFSS, an industry standard electromagnetic simulator, demonstrating WaveFEM's accuracy and reliability.</p>
+            </hgroup>
+        </div>
+        <div class="hero-image">
+            <image src="/assets/Hero Waveguide Obstacle Sim.webp" width="500px"></image>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="container" data-theme="light">
+        <h2>Horn Antenna</h2>
+        <p>Pyramidal horn antenna operating from 4-5 GHz for radar and satellite communications. Demonstrates accurate far-field radiation pattern analysis and gain calculations.</p>
+
+        <div class="grid">
+            <article>
+                <h4>3D Geometry</h4>
+                <div>
+                    <image src="/assets/comparisons/Horn Geometry.svg" width="700px"></image>
+                </div>
+            </article>
+
+            <article>
+                <h4>3D Field</h4>
+                <div>
+                    <image src="/assets/comparisons/Horn 3D Field.svg" width="700px"></image>
+                </div>
+            </article>
+        </div>
+
+        <div class="grid">
+            <article>
+                <h4>S-Parameters</h4>
+                <div>
+                    <image src="/assets/comparisons/Horn S11.svg" width="700px"></image>
+                </div>
+            </article>
+
+            <article>
+                <h4>Radiation Pattern</h4>
+                <div>
+                    <image src="/assets/comparisons/Horn Directivity Comparison.svg" width="700px"></image>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container" data-theme="light">
+        <h2>Waveguide Bandpass Filter</h2>
+        <p>Multi-cavity X-band waveguide filter centered at 11 GHz for satellite communications. Shows precise S-parameter modeling of resonant cavity coupling.</p>
+
+        <div class="grid">
+            <article>
+                <h4>3D Geometry</h4>
+                <div>
+                    <image src="/assets/comparisons/Waveguide Filter Geometry.svg" width="700px"></image>
+                </div>
+            </article>
+
+            <article>
+                <h4>3D Field</h4>
+                <div>
+                    <image src="/assets/comparisons/Waveguide Filter 3D Field.svg" width="700px"></image>
+                </div>
+            </article>
+        </div>
+
+        <div class="grid">
+            <article>
+                <h4>S-Parameters Magnitude</h4>
+                <div>
+                    <image src="/assets/comparisons/Waveguide Filter Comparison.svg" width="700px"></image>
+                </div>
+            </article>
+
+            <article>
+                <h4>S-Parameters Phase</h4>
+                <div>
+                    <image src="/assets/comparisons/Waveguide Filter Phase Comparison.svg" width="700px"></image>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container" data-theme="light">
+        <h2>Microstrip Patch Antenna</h2>
+        <p>Compact planar patch antenna for 2.4 GHz ISM band wireless applications. Demonstrates substrate effects and surface wave modeling.</p>
+
+        <div class="grid">
+            <article>
+                <h4>3D Geometry</h4>
+                <div>
+                    <image src="/assets/comparisons/Patch Geometry.svg" width="700px"></image>
+                </div>
+            </article>
+
+            <article>
+                <h4>3D Field</h4>
+                <div>
+                    <image src="/assets/comparisons/Patch 3D Field.svg" width="700px"></image>
+                </div>
+            </article>
+        </div>
+
+        <div class="grid">
+            <article>
+                <h4>S-Parameters</h4>
+                <div>
+                    <image src="/assets/comparisons/Patch S11 Comparison.svg" width="700px"></image>
+                </div>
+            </article>
+
+            <article>
+                <h4>Radiation Pattern</h4>
+                <div>
+                    <image src="/assets/comparisons/Patch Directivity Comparison.svg" width="700px"></image>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container" data-theme="light">
+        <h2>Coupled Line Filter</h2>
+        <p>Microstrip coupled-line bandpass filter operating from 5-7 GHz. Requires robust mesh refinement to accurately capture strong electromagnetic coupling between lines.</p>
+
+        <div class="grid">
+            <article>
+                <h4>3D Geometry</h4>
+                <div>
+                    <image src="/assets/comparisons/Coupled Line Filter Geometry.svg" width="700px"></image>
+                </div>
+            </article>
+
+            <article>
+                <h4>3D Field</h4>
+                <div>
+                    <image src="/assets/comparisons/Coupled Line Filter 3D Field.svg" width="700px"></image>
+                </div>
+            </article>
+        </div>
+
+        <div class="grid">
+            <article>
+                <h4>S-Parameters Magnitude</h4>
+                <div>
+                    <image src="/assets/comparisons/Coupled Line Filter Comparison.svg" width="700px"></image>
+                </div>
+            </article>
+
+            <article>
+                <h4>S-Parameters Phase</h4>
+                <div>
+                    <image src="/assets/comparisons/Coupled Line Filter Phase Comparison.svg" width="700px"></image>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container" data-theme="light">
+        <h2>Probe Fed Patch</h2>
+        <p>A patch antenna fed by a coaxial probe.</p>
+
+        <div class="grid">
+            <article>
+                <h4>3D Geometry</h4>
+                <div>
+                    <image src="/assets/comparisons/Probe Fed Patch Geometry.png" width="700px"></image>
+                </div>
+            </article>
+
+            <article>
+                <h4>3D Field</h4>
+                <div>
+                    <image src="/assets/comparisons/Probe Fed Patch 3D Field.png" width="700px"></image>
+                </div>
+            </article>
+        </div>
+
+        <div class="grid">
+            <article>
+                <h4>S-Parameters Magnitude</h4>
+                <div>
+                    <image src="/assets/comparisons/Probe Fed Patch Comparison.svg" width="700px"></image>
+                </div>
+            </article>
+
+            <article>
+                <h4>Radiation Pattern</h4>
+                <div>
+                    <image src="/assets/comparisons/Probe Fed Patch Directivity Comparison.svg" width="700px"></image>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section>
+</section>
+
+<div class="container" data-theme="light">
+    <h2>On Chip Inductor</h2>
+    <p>A generic on chip inductor typical of RFIC and MMIC chips</p>
+
+    <div class="grid">
+        <article>
+            <h4>3D Geometry</h4>
+            <div>
+                <image src="/assets/comparisons/On Chip Inductor.png" width="700px"></image>
+            </div>
+        </article>
+
+        <article>
+            <h4>3D Field</h4>
+            <div>
+                <image src="/assets/comparisons/On Chip Inductor 3D Field.png" width="700px"></image>
+            </div>
+        </article>
+    </div>
+
+    <div class="grid">
+        <article>
+            <h4>S-Parameters Magnitude</h4>
+            <div>
+                <image src="/assets/comparisons/On Chip Inductor Comparison.svg" width="700px"></image>
+            </div>
+        </article>
+
+        <article>
+            <h4>S-Parameters Phase</h4>
+            <div>
+                <image src="/assets/comparisons/On Chip Inductor Phase Comparison.svg" width="700px"></image>
+            </div>
+        </article>
+    </div>
+</div>
+
+<section>
+    <div class="container" data-theme="light">
+        <h2>Series Fed Patch Array</h2>
+        <p>8-element series-fed patch array for 28 GHz millimeter-wave 5G applications. Requires fine mesh discretization for accurate mutual coupling and radiation pattern modeling. <em>Note: Both simulations did not converge to 0.02 delta S due to memory limitations.</em></p>
+
+        <div class="grid">
+            <article>
+                <h4>3D Geometry</h4>
+                <div>
+                    <image src="/assets/comparisons/Series Fed Patch Array Geometry.svg" width="700px"></image>
+                </div>
+            </article>
+
+            <article>
+                <h4>3D Field</h4>
+                <div>
+                    <image src="/assets/comparisons/Series Fed Patch Array 3D Field.svg" width="700px"></image>
+                </div>
+            </article>
+        </div>
+
+        <div class="grid">
+            <article>
+                <h4>S-Parameters Magnitude</h4>
+                <div>
+                    <image src="/assets/comparisons/Series Fed Patch Array Comparison.svg" width="700px"></image>
+                </div>
+            </article>
+
+            <article>
+                <h4>Radiation Pattern</h4>
+                <div>
+                    <image src="/assets/comparisons/Series Fed Patch Array Directivity Comparison.svg" width="700px"></image>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container" data-theme="light">
+        <div style="text-align: center; padding: 2rem 0;">
+            <h3>Ready to Try WaveFEM?</h3>
+            <p>Experience these simulations and more with WaveFEM's intuitive interface and powerful solver.</p>
+            <b>Register for beta <a href="https://forms.gle/afSVpRJ9cY3LF54w8">here</a>!</b>
+        </div>
+    </div>
+</section>

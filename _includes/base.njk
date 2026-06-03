@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{% if description %}{{ description }}{% else %}WaveFEM is a 3D high frequency electromagnetic simulation package with lightning-fast performance, parametric design capabilities, and seamless integration with 3D models and manufacturing formats.{% endif %}">
+    <title>{% if title %}{{ title }} | {% endif %}WaveFEM | 3D High Frequency Electromagnetic Simulation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.blue.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/assets/logo.svg" type="image/x-icon">
+    {% if scripts %}<script src="/scripts.js"></script>{% endif %}
+</head>
+
+<nav class="container">
+  <ul>
+    <li><image src="/assets/logo.svg" width="40px"></image><a href="/"><strong>Wave<i style="color: black;">FEM</i></strong></a></li>
+  </ul>
+  <ul>
+    <li><a href="/about.html"{% if page.url == '/about.html' %} aria-current="page"{% endif %}>About</a></li>
+    <li><a href="/examples.html"{% if page.url == '/examples.html' %} aria-current="page"{% endif %}>Examples</a></li>
+  </ul>
+</nav>
+
+<body>
+{{ content | safe }}
+</body>
+
+<footer class="container">
+    <strong>Contact:</strong> <a href="mailto:wavefemproject@gmail.com">wavefemproject@gmail.com</a>
+  </small>
+</footer>
+
+</html>
