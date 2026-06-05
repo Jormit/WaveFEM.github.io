@@ -10,6 +10,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addNunjucksAsyncShortcode("image", async function (src, alt, ...args) {
     let cls = args[0] || "";
     let id = args[1] || "";
+    let loading = args[2] || "eager";
     let filePath = path.join("content", src);
     let stats;
     try {
@@ -19,13 +20,14 @@ module.exports = function (eleventyConfig) {
         dryRun: true,
       });
     } catch {
-      return `<img src="${src}" alt="${alt}"${cls ? ` class="${cls}"` : ""}${id ? ` id="${id}"` : ""}>`;
+      let clsFinal = "fade-img" + (cls ? " " + cls : "");
+      return `<img src="${src}" alt="${alt}" class="${clsFinal}"${id ? ` id="${id}"` : ""} loading="${loading}">`;
     }
     let format = Object.keys(stats)[0];
     let img = stats[format][0];
-    let clsAttr = cls ? ` class="${cls}"` : "";
+    let clsFinal = "fade-img" + (cls ? " " + cls : "");
     let idAttr = id ? ` id="${id}"` : "";
-    return `<img src="${src}" width="${img.width}" height="${img.height}" alt="${alt}"${clsAttr}${idAttr}>`;
+    return `<img src="${src}" width="${img.width}" height="${img.height}" alt="${alt}" class="${clsFinal}"${idAttr} loading="${loading}">`;
   });
 
   return {
