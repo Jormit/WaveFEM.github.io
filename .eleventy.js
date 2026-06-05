@@ -21,13 +21,13 @@ module.exports = function (eleventyConfig) {
       });
     } catch {
       let clsFinal = "fade-img" + (cls ? " " + cls : "");
-      return `<img src="${src}" alt="${alt}" class="${clsFinal}"${id ? ` id="${id}"` : ""} loading="${loading}">`;
+      return `<img src="${src}" alt="${alt}" class="${clsFinal}"${id ? ` id="${id}"` : ""} loading="${loading}" onload="this.classList.add('loaded')" onerror="this.classList.add('loaded')">`;
     }
     let format = Object.keys(stats)[0];
     let img = stats[format][0];
     let clsFinal = "fade-img" + (cls ? " " + cls : "");
     let idAttr = id ? ` id="${id}"` : "";
-    return `<img src="${src}" width="${img.width}" height="${img.height}" alt="${alt}" class="${clsFinal}"${idAttr} loading="${loading}">`;
+    return `<img src="${src}" width="${img.width}" height="${img.height}" alt="${alt}" class="${clsFinal}"${idAttr} loading="${loading}" onload="this.classList.add('loaded')" onerror="this.classList.add('loaded')">`;
   });
 
   return {
