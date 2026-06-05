@@ -7,13 +7,13 @@ scripts: true
     <div class="hero-content">
         <div class="hero-text">
             <hgroup>
-                <h1><image src="/assets/logo.svg" width="100px"></image>Wave<i style="color: black;">FEM</i></h1>
+                <h1>{% image "/assets/logo.svg", "WaveFEM Logo", "hero-logo" %}Wave<i style="color: black;">FEM</i></h1>
                 <p>Fast, Parametric and Affordable 3D High Frequency Electromagnetic Simulation Software</p>
             </hgroup>
             <b>Register for beta <a href="https://forms.gle/afSVpRJ9cY3LF54w8">here</a>!</b>
         </div>
         <div class="hero-image">
-            <image src="/assets/Hero Horn Sim.webp" width="500px"></image>
+            {% image "/assets/Hero Horn Sim.webp", "Hero Horn Sim", "hero-img" %}
         </div>
     </div>
 </header>
@@ -23,19 +23,19 @@ scripts: true
         <h2>Features</h2>
         <div class="features-grid">
             <article>
-                <image src="/assets/features/fast.svg" style="height: 200px"></image>
+                {% image "/assets/features/fast.svg", "Lightning Fast", "feature-icon" %}
                 <h3>Lightning Fast Simulations</h3>
                 <p>Intelligent adaptive meshing algorithm automatically refines critical regions while maintaining simulation accuracy.</p>
             </article>
 
             <article>
-                <image src="/assets/features/parametric.svg" style="height: 200px"></image>
+                {% image "/assets/features/parametric.svg", "Parametric Design", "feature-icon" %}
                 <h3>Parametric Design</h3>
                 <p>Define complex geometries through code with full parametric control and automate design sweeps or optimization studies.</p>
             </article>
 
             <article>
-                <image src="/assets/features/integration.svg" style="height: 200px"></image>
+                {% image "/assets/features/integration.svg", "Seamless Integration", "feature-icon" %}
                 <h3>Seamless Integration</h3>
                 <p>Import 3D models (.step format) or work with layered manufacturing formats including .gds for semiconductors and .dxf for PCB layouts.</p>
             </article>
@@ -48,7 +48,7 @@ scripts: true
         <h2>Clean Interface</h2>
         <p>All the functionality is a couple of clicks away...</p>
         <div class="image-container">
-            <img id="gallery-image" src="/assets/gui/gui1.webp" alt="Gallery Image">
+            {% image "/assets/gui/gui1.webp", "Gallery Image", "", "gallery-image" %}
         </div>
         <div class="image-title" id="image-title"></div>
 
@@ -68,12 +68,12 @@ scripts: true
         <div class="grid">
             <article>
                 <p><strong>Waveguide Filter Comparison</strong></p>
-                <image src="/assets/comparisons/Waveguide Filter Comparison.svg" width="700px"></image>
+                {% image "/assets/comparisons/Waveguide Filter Comparison.svg", "Waveguide Filter Comparison", "comparison-img" %}
             </article>
 
             <article>
                 <p><strong>Horn Antenna Radiation Pattern Comparison</strong></p>
-                <image src="/assets/comparisons/Horn Directivity Comparison.svg" width="700px"></image>
+                {% image "/assets/comparisons/Horn Directivity Comparison.svg", "Horn Directivity Comparison", "comparison-img" %}
             </article>
         </div>
 

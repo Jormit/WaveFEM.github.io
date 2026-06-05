@@ -71,8 +71,11 @@ function updateGallery() {
     const nextBtn = document.getElementById('next-btn');
     
     // Update image - use preloaded image if available
-    if (preloadedImages[currentIndex] && preloadedImages[currentIndex].complete) {
-        img.src = preloadedImages[currentIndex].src;
+    var preloaded = preloadedImages[currentIndex];
+    if (preloaded && preloaded.complete) {
+        img.src = preloaded.src;
+        img.setAttribute('width', preloaded.naturalWidth);
+        img.setAttribute('height', preloaded.naturalHeight);
     } else {
         img.src = images[currentIndex].src;
     }
