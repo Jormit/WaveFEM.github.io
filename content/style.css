@@ -1,6 +1,12 @@
+body {
+    background: #f5f7fa;
+}
+
 section {
+    margin: 0;
     padding: 2rem 0;
-    margin-top: 2rem;
+    overflow: clip;
+    background: linear-gradient(135deg, #f5f7fa 0%, #eef2f7 50%, #f5f7fa 100%);
 }
 
 .hero-content {
@@ -44,7 +50,7 @@ section {
 }
 
 .features-section {
-    background-color: #1a1a1a;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 50%, #1a1a1a 100%);
     color: #ffffff;
 }
 
@@ -54,9 +60,30 @@ section {
     gap: 5rem;
 }
 
-.features-grid article
-{
-    background-color: #2a2a2a;
+article {
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+article:hover {
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+[data-theme="dark"] article,
+.features-grid article {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] article:hover,
+.features-grid article:hover {
+    background: rgba(255, 255, 255, 0.12);
 }
 
 .feature-icon
