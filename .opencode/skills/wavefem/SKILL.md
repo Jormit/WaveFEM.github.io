@@ -67,3 +67,34 @@ Deployed via **GitHub Actions** (`deploy.yml`). On every push to `main`:
 
 **One-time setup:** In repo Settings → Pages → Source, select **"GitHub Actions"**.
 The `CNAME` file is copied to `_site/` automatically, preserving the custom domain.
+
+## Image Handling
+
+All images use the `{% image %}` shortcode (defined in `.eleventy.js` via `@11ty/eleventy-img`).
+
+**Shortcode signature:**
+```
+{% image src, alt, cls, id, loading %}
+```
+- `src` — root-relative path (e.g. `/assets/logo.svg`)
+- `alt` — alt text
+- `cls` — CSS class(es), added alongside `fade-img`
+- `id` — element id (optional)
+- `loading` — `"eager"` (default) or `"lazy"`
+
+**What it generates:** `<img>` with `width`, `height` (intrinsic dimensions read at build time), `class="fade-img [cls]"`, and `loading="..."`. The `width`/`height` attributes prevent Cumulative Layout Shift.
+
+**Fade-in transition:** Every image starts at `opacity: 0` via `.fade-img` CSS. A capture-phase `load` listener in `base.njk` `<head>` adds `.loaded` class when the image finishes decoding: `.fade-img.loaded { opacity: 1; }`.
+
+**Loading strategy:**
+- **Eager** (above fold): nav logo, hero logos, hero images, gallery image
+- **Lazy** (below fold): feature SVGs, comparison images
+
+**Display size CSS classes** (in `style.css`):
+| Class | Intended display size |
+|---|---|
+| `.nav-logo` | 40px wide |
+| `.hero-logo` | 100px wide |
+| `.hero-img` | 500px wide, `max-width: 100%` |
+| `.feature-icon` | 200px tall |
+| `.comparison-img` | 700px wide, `max-width: 100%` |
