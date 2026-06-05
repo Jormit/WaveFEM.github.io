@@ -78,13 +78,11 @@ All images use the `{% image %}` shortcode (defined in `.eleventy.js` via `@11ty
 ```
 - `src` — root-relative path (e.g. `/assets/logo.svg`)
 - `alt` — alt text
-- `cls` — CSS class(es), added alongside `fade-img`
+- `cls` — CSS class(es)
 - `id` — element id (optional)
 - `loading` — `"eager"` (default) or `"lazy"`
 
-**What it generates:** `<img>` with `width`, `height` (intrinsic dimensions read at build time), `class="fade-img [cls]"`, and `loading="..."`. The `width`/`height` attributes prevent Cumulative Layout Shift.
-
-**Fade-in transition:** Every image starts at `opacity: 0` via `.fade-img` CSS. A capture-phase `load` listener in `base.njk` `<head>` adds `.loaded` class when the image finishes decoding: `.fade-img.loaded { opacity: 1; }`.
+**What it generates:** `<img>` with `width`, `height` (intrinsic dimensions read at build time), optional `class` and `id`, and `loading="..."`. The `width`/`height` attributes prevent Cumulative Layout Shift.
 
 **Loading strategy:**
 - **Eager** (above fold): nav logo, hero logos, hero images, gallery image

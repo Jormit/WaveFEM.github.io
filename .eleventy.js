@@ -20,14 +20,14 @@ module.exports = function (eleventyConfig) {
         dryRun: true,
       });
     } catch {
-      let clsFinal = "fade-img" + (cls ? " " + cls : "");
-      return `<img src="${src}" alt="${alt}" class="${clsFinal}"${id ? ` id="${id}"` : ""} loading="${loading}" onload="this.classList.add('loaded')" onerror="this.classList.add('loaded')">`;
+      let clsAttr = cls ? ` class="${cls}"` : "";
+      return `<img src="${src}" alt="${alt}"${clsAttr}${id ? ` id="${id}"` : ""} loading="${loading}">`;
     }
     let format = Object.keys(stats)[0];
     let img = stats[format][0];
-    let clsFinal = "fade-img" + (cls ? " " + cls : "");
+    let clsAttr = cls ? ` class="${cls}"` : "";
     let idAttr = id ? ` id="${id}"` : "";
-    return `<img src="${src}" width="${img.width}" height="${img.height}" alt="${alt}" class="${clsFinal}"${idAttr} loading="${loading}" onload="this.classList.add('loaded')" onerror="this.classList.add('loaded')">`;
+    return `<img src="${src}" width="${img.width}" height="${img.height}" alt="${alt}"${clsAttr}${idAttr} loading="${loading}">`;
   });
 
   return {
