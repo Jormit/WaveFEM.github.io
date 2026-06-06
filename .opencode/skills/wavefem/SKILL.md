@@ -21,6 +21,8 @@ Static marketing site for WaveFEM, built with [Eleventy (11ty)](https://www.11ty
 │   ├── index.njk             # Home page
 │   ├── about.njk             # About page
 │   ├── examples.njk          # Examples page
+│   ├── parametric-demo.njk   # Interactive 3D parametric demo page
+│   ├── parametric-demo.js    # Three.js scene + geometry builder + slider logic
 │   ├── style.css             # Custom styles (PicoCSS overrides)
 │   ├── scripts.js            # Gallery carousel logic
 │   ├── CNAME                 # Custom domain (wavefem.com)
@@ -41,6 +43,7 @@ Static marketing site for WaveFEM, built with [Eleventy (11ty)](https://www.11ty
 - **Page frontmatter**: each page sets `layout: base.njk`, optional `title`, `description`, `scripts`
 - **Asset paths**: always root-relative (`/assets/...`, `/style.css`)
 - **Active nav**: `aria-current="page"` is set automatically via `page.url` comparison
+- **Interactive pages** (Three.js): use CDN importmap in the page `.njk` directly; no bundler needed. The page JS file must be added as a passthrough copy in `.eleventy.js`.
 
 ## Commands
 
@@ -96,3 +99,38 @@ All images use the `{% image %}` shortcode (defined in `.eleventy.js` via `@11ty
 | `.hero-img` | 500px wide, `max-width: 100%` |
 | `.feature-icon` | 200px tall |
 | `.comparison-img` | 700px wide, `max-width: 100%` |
+
+## Parametric Demo Page
+
+Interactive 3D page at `/parametric-demo.html` demonstrating WaveFEM's Python scripting
+capabilities using Three.js.
+
+### Files
+- `content/parametric-demo.njk` — Page template with importmap for Three.js + highlight.js
+- `content/parametric-demo.js` — Three.js scene, manual BufferGeometry builder, slider controls
+- `.eleventy.js` — must add `parametric-demo.js` as passthrough copy
+
+### Architecture
+- **3D rendering**: Three.js r160 loaded via CDN importmap
+- **Geometry**: Horn antenna built as a single `BufferGeometry` (~56 triangles).
+  Outer shell + inner cavity faces constructed manually and oriented automatically
+  using center-based normal detection (`quadAuto()` function).
+- **Code display**: Python script displayed with highlight.js (github theme).
+  Parameter values update live when sliders change.
+- **Controls**: 7 range sliders regenerate geometry on `input` events; Reset button
+  restores defaults.
+
+### Page conventions
+- Does **not** use `scripts: true` frontmatter — loads its own module via
+  `<script type="module">` with importmap
+- Uses `.split-layout` grid (1fr 1fr, 520px high) for viewport + code panel
+- Mobile: tabs toggle between 3D Model and Code panels (CSS `@media` + JS)
+- Custom CSS is minimal — leans on PicoCSS for buttons, labels, inputs,
+  typography, and grid
+
+### Editing tips
+- To add a new parameter: add an entry to the `sliders` array and a matching
+  placeholder `{param_name}` in `CAD_SCRIPT` template string.
+- The geometry builder computes face winding automatically, so quad vertex
+  order just needs to go around the perimeter (order doesn't matter for
+  correctness).
