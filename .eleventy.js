@@ -4,6 +4,7 @@ const Image = require("@11ty/eleventy-img");
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("content/style.css");
   eleventyConfig.addPassthroughCopy("content/scripts.js");
+  eleventyConfig.addPassthroughCopy("content/parametric-demo.js");
   eleventyConfig.addPassthroughCopy("content/CNAME");
   eleventyConfig.addPassthroughCopy("content/assets");
 

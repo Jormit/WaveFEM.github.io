@@ -1,0 +1,44 @@
+---
+layout: base.njk
+title: Parametric Demo
+permalink: /parametric-demo.html
+---
+
+<section>
+    <div class="container">
+            <h1>Parametric Scripting</h1>
+            <p>Watch the 3D model update in real-time as you tweak parameters. This horn antenna is generated from Python scripting — supporting CadQuery, build123d, gdstk, or any Python code.</p>
+
+        <div class="mobile-tabs">
+            <button class="mobile-tab active" data-tab="model">3D Model</button>
+            <button class="mobile-tab" data-tab="code">Code</button>
+        </div>
+
+        <div class="split-layout">
+            <div class="viewport-panel" id="viewport"></div>
+            <div class="code-panel">
+                <div class="code-header">
+                    <small><samp>simple_horn.py</samp></small>
+                    <button id="reset-btn">Reset</button>
+                </div>
+                <pre><code id="code-display" class="language-python"></code></pre>
+            </div>
+        </div>
+
+        <h3>Parameters</h3>
+        <div class="grid" id="sliders"></div>
+    </div>
+</section>
+
+<script type="importmap">
+{
+    "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+}
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+<script type="module" src="/parametric-demo.js"></script>
