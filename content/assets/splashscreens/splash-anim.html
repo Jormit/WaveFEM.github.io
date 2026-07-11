@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>WaveFEM Splash</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  #stage {
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+</style>
+</head>
+<body>
+
+<div id="stage"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script>
+  const SVG_FILE = "splashscreen general.svg";
+
+  const ARROW_IDS = ["path3", "path3-4", "path3-7", "path3-7-4", "path3-7-4-3"];
+  const WAVE_HALO_ID = "path1";
+  const WAVE_ID = "path5";
+  const TEXT_ID = "text1";
+
+  window.addEventListener("load", async () => {
+    const stage = document.getElementById("stage");
+    const resp = await fetch(SVG_FILE);
+    const svgText = await resp.text();
+    stage.innerHTML = svgText;
+
+    const svg = stage.querySelector("svg");
+    const arrows = ARROW_IDS.map(id => document.getElementById(id)).filter(Boolean);
+    const waveHalo = document.getElementById(WAVE_HALO_ID);
+    const wave = document.getElementById(WAVE_ID);
+    const logoText = document.getElementById(TEXT_ID);
+
+    function prepDraw(el) {
+      const length = el.getTotalLength();
+      el.style.strokeDasharray = length;
+      el.style.strokeDashoffset = length;
+      return length;
+    }
+
+    arrows.forEach(prepDraw);
+    prepDraw(waveHalo);
+    prepDraw(wave);
+
+    gsap.set(svg, { scale: 0.9, transformOrigin: "50% 50%", opacity: 0 });
+    gsap.set(logoText, { opacity: 0 });
+
+    const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
+
+    tl.to(svg, { opacity: 1, scale: 1, duration: 0.5 })
+      .to(arrows, {
+        strokeDashoffset: 0,
+        duration: 0.5,
+        stagger: 0.12,
+        ease: "power2.out"
+      }, 0.4)
+      .to(waveHalo, { strokeDashoffset: 0, duration: 0.7, ease: "power1.inOut" }, 1.0)
+      .to(wave, { strokeDashoffset: 0, duration: 0.7, ease: "power1.inOut" }, 1.0)
+      .fromTo(logoText,
+        { opacity: 0, x: 30 },
+        { opacity: 1, x: 0, duration: 0.6, ease: "power2.out" },
+        1.4
+      )
+      .to(svg, { scale: 1.03, duration: 0.15, ease: "power1.out" }, 2.0)
+      .to(svg, { scale: 1, duration: 0.25, ease: "power2.out" }, 2.15);
+  });
+</script>
+
+</body>
+</html>
