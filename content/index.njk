@@ -50,14 +50,15 @@ scripts: true
         <p>All the functionality is a couple of clicks away...</p>
         <div class="image-container">
             {% image "/assets/gui/gui1.webp", "Gallery Image", "", "gallery-image" %}
+            <div class="image-title-row">
+                <div class="image-title" id="image-title"></div>
+                <div class="nav-buttons">
+                    <button id="prev-btn" onclick="previousImage()">←</button>
+                    <span class="image-counter" id="counter">1 / 5</span>
+                    <button id="next-btn" onclick="nextImage()">→</button>
+                </div>
+            </div>
         </div>
-        <div class="image-title" id="image-title"></div>
-
-        <fieldset role="group" class="nav-buttons">
-            <button id="prev-btn" onclick="previousImage()">‹</button>
-            <span class="image-counter" id="counter">1 / 5</span>
-            <button id="next-btn" onclick="nextImage()">›</button>
-        </fieldset>
     </div>
 </section>
 
