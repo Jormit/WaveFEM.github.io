@@ -76,9 +76,11 @@ The `CNAME` file is copied to `_site/` automatically, preserving the custom doma
 All images use the `{% image %}` shortcode (defined in `.eleventy.js` via `@11ty/eleventy-img`).
 
 **Shortcode signature:**
+
 ```
 {% image src, alt, cls, id, loading %}
 ```
+
 - `src` — root-relative path (e.g. `/assets/logo.svg`)
 - `alt` — alt text
 - `cls` — CSS class(es)
@@ -88,16 +90,18 @@ All images use the `{% image %}` shortcode (defined in `.eleventy.js` via `@11ty
 **What it generates:** `<img>` with `width`, `height` (intrinsic dimensions read at build time), optional `class` and `id`, and `loading="..."`. The `width`/`height` attributes prevent Cumulative Layout Shift.
 
 **Loading strategy:**
+
 - **Eager** (above fold): nav logo, hero logos, hero images, gallery image
 - **Lazy** (below fold): feature SVGs, comparison images
 
 **Display size CSS classes** (in `style.css`):
-| Class | Intended display size |
-|---|---|
-| `.nav-logo` | 40px wide |
-| `.hero-logo` | 100px wide |
-| `.hero-img` | 500px wide, `max-width: 100%` |
-| `.feature-icon` | 200px tall |
+
+| Class             | Intended display size         |
+| ----------------- | ----------------------------- |
+| `.nav-logo`       | 40px wide                     |
+| `.hero-logo`      | 100px wide                    |
+| `.hero-img`       | 500px wide, `max-width: 100%` |
+| `.feature-icon`   | 200px tall                    |
 | `.comparison-img` | 700px wide, `max-width: 100%` |
 
 ## Parametric Demo Page
@@ -106,11 +110,13 @@ Interactive 3D page at `/parametric-demo.html` demonstrating WaveFEM's Python sc
 capabilities using Three.js.
 
 ### Files
+
 - `content/parametric-demo.njk` — Page template with importmap for Three.js + highlight.js
 - `content/parametric-demo.js` — Three.js scene, manual BufferGeometry builder, slider controls
 - `.eleventy.js` — must add `parametric-demo.js` as passthrough copy
 
 ### Architecture
+
 - **3D rendering**: Three.js r160 loaded via CDN importmap
 - **Geometry**: Horn antenna built as a single `BufferGeometry` (~56 triangles).
   Outer shell + inner cavity faces constructed manually and oriented automatically
@@ -121,6 +127,7 @@ capabilities using Three.js.
   restores defaults.
 
 ### Page conventions
+
 - Does **not** use `scripts: true` frontmatter — loads its own module via
   `<script type="module">` with importmap
 - Uses `.split-layout` grid (1fr 1fr, 520px high) for viewport + code panel
@@ -129,6 +136,7 @@ capabilities using Three.js.
   typography, and grid
 
 ### Editing tips
+
 - To add a new parameter: add an entry to the `sliders` array and a matching
   placeholder `{param_name}` in `CAD_SCRIPT` template string.
 - The geometry builder computes face winding automatically, so quad vertex

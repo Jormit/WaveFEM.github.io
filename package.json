@@ -21,7 +21,9 @@
   },
   "homepage": "https://github.com/Jormit/WaveFEM.github.io#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.6"
+    "@11ty/eleventy": "^3.1.6",
+    "prettier": "^3.9.5",
+    "prettier-plugin-jinja-template": "^2.2.0"
   },
   "dependencies": {
     "@11ty/eleventy-img": "^6.0.4"

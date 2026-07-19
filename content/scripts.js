@@ -1,44 +1,44 @@
 const images = [
-    {
-        src: "assets/gui/gui1.png",
-        title: "3D Farfield Plot",
-        alt: "3D Farfield Plot"
-    },
-    {
-        src: "assets/gui/gui2.webp", 
-        title: "E-Field Visualization",
-        alt: "E-Field Visualization"
-    },
-    {
-        src: "assets/gui/gui3.webp",
-        title: "Parametric Designs", 
-        alt: "Parametric Designs"
-    },
-    {
-        src: "assets/gui/gui4.webp",
-        title: "S-Parameter Plot", 
-        alt: "S-Parameter Plot"
-    },
-    {
-        src: "assets/gui/gui5.webp",
-        title: "Automatic Adaptive Meshing",
-        alt: "Automatic Adaptive Meshing"
-    },
-    {
-        src: "assets/gui/gui6.webp",
-        title: "Integrated Stackup Editor",
-        alt: "Integrated Stackup Editor"
-    },
-    {
-        src: "assets/gui/gui7.webp",
-        title: "2D port solutions",
-        alt: "2D port solutions"
-    },
-    {
-        src: "assets/gui/gui8.webp",
-        title: "SBR Ray Tracing (Coming Soon)",
-        alt: "SBR Ray Tracing (Coming Soon)"
-    }
+  {
+    src: "assets/gui/gui1.png",
+    title: "3D Farfield Plot",
+    alt: "3D Farfield Plot",
+  },
+  {
+    src: "assets/gui/gui2.webp",
+    title: "E-Field Visualization",
+    alt: "E-Field Visualization",
+  },
+  {
+    src: "assets/gui/gui3.webp",
+    title: "Parametric Designs",
+    alt: "Parametric Designs",
+  },
+  {
+    src: "assets/gui/gui4.webp",
+    title: "S-Parameter Plot",
+    alt: "S-Parameter Plot",
+  },
+  {
+    src: "assets/gui/gui5.webp",
+    title: "Automatic Adaptive Meshing",
+    alt: "Automatic Adaptive Meshing",
+  },
+  {
+    src: "assets/gui/gui6.webp",
+    title: "Integrated Stackup Editor",
+    alt: "Integrated Stackup Editor",
+  },
+  {
+    src: "assets/gui/gui7.webp",
+    title: "2D port solutions",
+    alt: "2D port solutions",
+  },
+  {
+    src: "assets/gui/gui8.webp",
+    title: "SBR Ray Tracing (Coming Soon)",
+    alt: "SBR Ray Tracing (Coming Soon)",
+  },
 ];
 
 let currentIndex = 0;
@@ -46,79 +46,79 @@ let preloadedImages = [];
 
 // Prefetch all images
 function prefetchImages() {
-    images.forEach((imageData, index) => {
-        const img = new Image();
-        img.src = imageData.src;
-        preloadedImages[index] = img;
-        
-        // Optional: Add error handling
-        img.onerror = function() {
-            console.warn(`Failed to preload image: ${imageData.src}`);
-        };
-        
-        // Optional: Add load event for debugging
-        img.onload = function() {
-            console.log(`Preloaded image: ${imageData.src}`);
-        };
-    });
+  images.forEach((imageData, index) => {
+    const img = new Image();
+    img.src = imageData.src;
+    preloadedImages[index] = img;
+
+    // Optional: Add error handling
+    img.onerror = function () {
+      console.warn(`Failed to preload image: ${imageData.src}`);
+    };
+
+    // Optional: Add load event for debugging
+    img.onload = function () {
+      console.log(`Preloaded image: ${imageData.src}`);
+    };
+  });
 }
 
 function updateGallery() {
-    const img = document.getElementById('gallery-image');
-    const title = document.getElementById('image-title');
-    const counter = document.getElementById('counter');
-    const prevBtn = document.getElementById('prev-btn');
-    const nextBtn = document.getElementById('next-btn');
-    
-    // Update image - use preloaded image if available
-    var preloaded = preloadedImages[currentIndex];
-    if (preloaded && preloaded.complete) {
-        img.src = preloaded.src;
-        img.setAttribute('width', preloaded.naturalWidth);
-        img.setAttribute('height', preloaded.naturalHeight);
-    } else {
-        img.src = images[currentIndex].src;
-    }
-    img.alt = images[currentIndex].alt;
-    
-    // Update title
-    title.textContent = images[currentIndex].title;
-    
-    // Update counter
-    counter.textContent = `${currentIndex + 1} / ${images.length}`;
-    
-    // Update button states
-    prevBtn.disabled = currentIndex === 0;
-    nextBtn.disabled = currentIndex === images.length - 1;
+  const img = document.getElementById("gallery-image");
+  const title = document.getElementById("image-title");
+  const counter = document.getElementById("counter");
+  const prevBtn = document.getElementById("prev-btn");
+  const nextBtn = document.getElementById("next-btn");
+
+  // Update image - use preloaded image if available
+  var preloaded = preloadedImages[currentIndex];
+  if (preloaded && preloaded.complete) {
+    img.src = preloaded.src;
+    img.setAttribute("width", preloaded.naturalWidth);
+    img.setAttribute("height", preloaded.naturalHeight);
+  } else {
+    img.src = images[currentIndex].src;
+  }
+  img.alt = images[currentIndex].alt;
+
+  // Update title
+  title.textContent = images[currentIndex].title;
+
+  // Update counter
+  counter.textContent = `${currentIndex + 1} / ${images.length}`;
+
+  // Update button states
+  prevBtn.disabled = currentIndex === 0;
+  nextBtn.disabled = currentIndex === images.length - 1;
 }
 
 function nextImage() {
-    if (currentIndex < images.length - 1) {
-        currentIndex++;
-        updateGallery();
-    }
+  if (currentIndex < images.length - 1) {
+    currentIndex++;
+    updateGallery();
+  }
 }
 
 function previousImage() {
-    if (currentIndex > 0) {
-        currentIndex--;
-        updateGallery();
-    }
+  if (currentIndex > 0) {
+    currentIndex--;
+    updateGallery();
+  }
 }
 
 // Keyboard navigation
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'ArrowLeft') {
-        previousImage();
-    } else if (e.key === 'ArrowRight') {
-        nextImage();
-    }
+document.addEventListener("keydown", function (e) {
+  if (e.key === "ArrowLeft") {
+    previousImage();
+  } else if (e.key === "ArrowRight") {
+    nextImage();
+  }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Start prefetching images immediately
-    prefetchImages();
-    
-    // Initialize gallery
-    updateGallery();
+document.addEventListener("DOMContentLoaded", function () {
+  // Start prefetching images immediately
+  prefetchImages();
+
+  // Initialize gallery
+  updateGallery();
 });

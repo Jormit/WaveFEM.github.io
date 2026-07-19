@@ -24,3 +24,17 @@ npm run build   # Outputs to _site/
 ## Deploy
 
 Push to `main` — the GitHub Action builds and deploys automatically.
+
+## Formatter
+
+To check:
+
+```bash
+npx prettier . --check
+```
+
+To peform:
+
+```bash
+npx prettier . --write
+```

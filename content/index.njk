@@ -4,119 +4,168 @@ scripts: true
 ---
 
 <header class="container">
-    <div class="hero-content">
-        <div class="hero-text">
-            <hgroup>
-                <h1>{% image "/assets/logo.svg", "WaveFEM Logo", "hero-logo" %}Wave<i style="color: black;">FEM</i></h1>
-                <p>Fast, Parametric and Accurate 3D High Frequency Electromagnetic Simulation Software</p>
-            </hgroup>
-            <b>Register for beta <a href="https://forms.gle/afSVpRJ9cY3LF54w8">here</a>!</b>
-        </div>
-        <div class="hero-image">
-            {% image "/assets/Hero Horn Sim.webp", "Hero Horn Sim", "hero-img" %}
-        </div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <hgroup>
+        <h1>
+          {% image "/assets/logo.svg", "WaveFEM Logo", "hero-logo" %}Wave<i
+            style="color: black;"
+            >FEM</i
+          >
+        </h1>
+        <p>
+          Fast, Parametric and Accurate 3D High Frequency Electromagnetic
+          Simulation Software
+        </p>
+      </hgroup>
+      <b
+        >Register for beta
+        <a href="https://forms.gle/afSVpRJ9cY3LF54w8">here</a>!</b
+      >
     </div>
+    <div class="hero-image">
+      {% image "/assets/Hero Horn Sim.webp", "Hero Horn Sim", "hero-img" %}
+    </div>
+  </div>
 </header>
 
 <section class="features-section">
-    <div class="container" data-theme="dark">
-        <h2>Features</h2>
-        <div class="features-grid">
-            <article>
-                {% image "/assets/features/fast.svg", "Lightning Fast", "feature-icon", "", "lazy" %}
-                <h3>Lightning Fast Simulations</h3>
-                <p>Intelligent adaptive meshing algorithm automatically refines critical regions while maintaining simulation accuracy.</p>
-            </article>
+  <div class="container" data-theme="dark">
+    <h2>Features</h2>
+    <div class="features-grid">
+      <article>
+        {% image "/assets/features/fast.svg", "Lightning Fast", "feature-icon", "", "lazy" %}
+        <h3>Lightning Fast Simulations</h3>
+        <p>
+          Intelligent adaptive meshing algorithm automatically refines critical
+          regions while maintaining simulation accuracy.
+        </p>
+      </article>
 
-            <article>
-                {% image "/assets/features/parametric.svg", "Parametric Design", "feature-icon", "", "lazy" %}
-                <h3>Parametric Design</h3>
-                <p>Define complex geometries through code with full parametric control and automate design sweeps or optimization studies.</p>
-                <footer><a href="/parametric-demo.html">Try the interactive demo &rarr;</a></footer>
-            </article>
+      <article>
+        {% image "/assets/features/parametric.svg", "Parametric Design", "feature-icon", "", "lazy" %}
+        <h3>Parametric Design</h3>
+        <p>
+          Define complex geometries through code with full parametric control
+          and automate design sweeps or optimization studies.
+        </p>
+        <footer>
+          <a href="/parametric-demo.html">Try the interactive demo &rarr;</a>
+        </footer>
+      </article>
 
-            <article>
-                {% image "/assets/features/integration.svg", "Seamless Integration", "feature-icon", "", "lazy" %}
-                <h3>Seamless Integration</h3>
-                <p>Import 3D models (.step format) or work with layered manufacturing formats including .gds for semiconductors and .dxf for PCB layouts.</p>
-            </article>
-        </div>
+      <article>
+        {% image "/assets/features/integration.svg", "Seamless Integration", "feature-icon", "", "lazy" %}
+        <h3>Seamless Integration</h3>
+        <p>
+          Import 3D models (.step format) or work with layered manufacturing
+          formats including .gds for semiconductors and .dxf for PCB layouts.
+        </p>
+      </article>
     </div>
+  </div>
 </section>
 
 <section>
-    <div class="container" data-theme="light">
-        <h2>Clean Interface</h2>
-        <p>All the functionality is a couple of clicks away...</p>
-        <div class="image-container">
-            {% image "/assets/gui/gui1.webp", "Gallery Image", "", "gallery-image" %}
-            <div class="image-title-row">
-                <div class="image-title" id="image-title"></div>
-                <div class="nav-buttons">
-                    <button id="prev-btn" onclick="previousImage()">←</button>
-                    <span class="image-counter" id="counter">1 / 5</span>
-                    <button id="next-btn" onclick="nextImage()">→</button>
-                </div>
-            </div>
+  <div class="container" data-theme="light">
+    <h2>Clean Interface</h2>
+    <p>All the functionality is a couple of clicks away...</p>
+    <div class="image-container">
+      {% image "/assets/gui/gui1.webp", "Gallery Image", "", "gallery-image" %}
+      <div class="image-title-row">
+        <div class="image-title" id="image-title"></div>
+        <div class="nav-buttons">
+          <button id="prev-btn" onclick="previousImage()">←</button>
+          <span class="image-counter" id="counter">1 / 5</span>
+          <button id="next-btn" onclick="nextImage()">→</button>
         </div>
+      </div>
     </div>
+  </div>
 </section>
 
 <section>
-    <div class="container" data-theme="light">
-        <h2>State-of-the-Art Accuracy</h2>
-        <p>WaveFEM delivers exceptional accuracy across a wide range of electromagnetic simulation scenarios. Our advanced finite element method implementation consistently produces results that match those from industry-standard commercial software packages.</p>
+  <div class="container" data-theme="light">
+    <h2>State-of-the-Art Accuracy</h2>
+    <p>
+      WaveFEM delivers exceptional accuracy across a wide range of
+      electromagnetic simulation scenarios. Our advanced finite element method
+      implementation consistently produces results that match those from
+      industry-standard commercial software packages.
+    </p>
 
-        <div class="grid">
-            <article>
-                <p><strong>Waveguide Filter Comparison</strong></p>
-                {% image "/assets/comparisons/Waveguide Filter Comparison.svg", "Waveguide Filter Comparison", "comparison-img", "", "lazy" %}
-            </article>
+    <div class="grid">
+      <article>
+        <p><strong>Waveguide Filter Comparison</strong></p>
+        {% image "/assets/comparisons/Waveguide Filter Comparison.svg", "Waveguide Filter Comparison", "comparison-img", "", "lazy" %}
+      </article>
 
-            <article>
-                <p><strong>Horn Antenna Radiation Pattern Comparison</strong></p>
-                {% image "/assets/comparisons/Horn Directivity Comparison.svg", "Horn Directivity Comparison", "comparison-img", "", "lazy" %}
-            </article>
-        </div>
-
-        <p>See more examples <a href="/examples.html">here</a></p>
+      <article>
+        <p><strong>Horn Antenna Radiation Pattern Comparison</strong></p>
+        {% image "/assets/comparisons/Horn Directivity Comparison.svg", "Horn Directivity Comparison", "comparison-img", "", "lazy" %}
+      </article>
     </div>
+
+    <p>See more examples <a href="/examples.html">here</a></p>
+  </div>
 </section>
 
 <section class="features-section">
-    <div class="container" data-theme="dark">
-        <h2>See It in Action</h2>
-        <video autoplay muted loop playsinline disablepictureinpicture style="max-width:100%;height:auto;border-radius:10px;pointer-events:none">
-            <source src="/assets/video.mp4" type="video/mp4">
-        </video>
-    </div>
+  <div class="container" data-theme="dark">
+    <h2>See It in Action</h2>
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      disablepictureinpicture
+      style="max-width:100%;height:auto;border-radius:10px;pointer-events:none"
+    >
+      <source src="/assets/video.mp4" type="video/mp4" />
+    </video>
+  </div>
 </section>
 
 <section>
-    <div class="container">
-        <h2>Applications</h2>
-        <p>WaveFEM is designed to handle a wide range of electromagnetic simulation challenges across multiple industries and research domains.</p>
+  <div class="container">
+    <h2>Applications</h2>
+    <p>
+      WaveFEM is designed to handle a wide range of electromagnetic simulation
+      challenges across multiple industries and research domains.
+    </p>
 
-        <div class="grid">
-            <article>
-                <h3>High-Speed PCB Design</h3>
-                <p>Analyze signal integrity, crosstalk, and transmission lines in multi-layer PCBs for high-speed digital applications.</p>
-            </article>
+    <div class="grid">
+      <article>
+        <h3>High-Speed PCB Design</h3>
+        <p>
+          Analyze signal integrity, crosstalk, and transmission lines in
+          multi-layer PCBs for high-speed digital applications.
+        </p>
+      </article>
 
-            <article>
-                <h3>Semiconductor Design</h3>
-                <p>Simulate MMICs, RF chips, and packaging interconnects with accurate parasitic modeling and high-frequency performance analysis.</p>
-            </article>
+      <article>
+        <h3>Semiconductor Design</h3>
+        <p>
+          Simulate MMICs, RF chips, and packaging interconnects with accurate
+          parasitic modeling and high-frequency performance analysis.
+        </p>
+      </article>
 
-            <article>
-                <h3>Antenna Design</h3>
-                <p>Design patch antennas and antenna arrays with radiation pattern prediction and array analysis.</p>
-            </article>
+      <article>
+        <h3>Antenna Design</h3>
+        <p>
+          Design patch antennas and antenna arrays with radiation pattern
+          prediction and array analysis.
+        </p>
+      </article>
 
-            <article>
-                <h3>Waveguide Components</h3>
-                <p>Simulate bandpass filters and multiplexers with precise S-parameter calculations for satellite and radar systems.</p>
-            </article>
-        </div>
+      <article>
+        <h3>Waveguide Components</h3>
+        <p>
+          Simulate bandpass filters and multiplexers with precise S-parameter
+          calculations for satellite and radar systems.
+        </p>
+      </article>
     </div>
+  </div>
 </section>
