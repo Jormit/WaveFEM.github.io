@@ -6,7 +6,7 @@ section {
   margin: 0;
   padding: 2rem 0;
   overflow: clip;
-  background: linear-gradient(135deg, #f5f7fa 0%, #eef2f7 50%, #f5f7fa 100%);
+  background: linear-gradient(180deg, #f5f7fa 0%, #eef2f7 50%, #f5f7fa 100%);
 }
 
 .hero-content {
