@@ -18,6 +18,10 @@ scripts: true
           Simulation Software
         </p>
       </hgroup>
+      <p class="hero-sub">
+        A finite element solver for microwave and RF design: filters, waveguide
+        components and antennas, all from one desktop application.
+      </p>
       <b
         >Register for beta
         <a href="https://forms.gle/afSVpRJ9cY3LF54w8">here</a>!</b
@@ -29,7 +33,7 @@ scripts: true
   </div>
 </header>
 
-<section class="features-section">
+<section id="features" class="features-section">
   <div class="container" data-theme="dark">
     <h2>Features</h2>
     <div class="features-grid">
@@ -37,8 +41,8 @@ scripts: true
         {% image "/assets/features/fast.svg", "Lightning Fast", "feature-icon", "", "lazy" %}
         <h3>Lightning Fast Simulations</h3>
         <p>
-          Intelligent adaptive meshing algorithm automatically refines critical
-          regions while maintaining simulation accuracy.
+          Adaptive meshing and adaptive frequency sweeps solve only what is
+          needed.
         </p>
       </article>
 
@@ -46,28 +50,54 @@ scripts: true
         {% image "/assets/features/parametric.svg", "Parametric Design", "feature-icon", "", "lazy" %}
         <h3>Parametric Design</h3>
         <p>
-          Define complex geometries through code with full parametric control
-          and automate design sweeps or optimization studies.
+          Script geometry in Python, change parameters live and compare design
+          variants.
         </p>
-        <footer>
-          <a href="/parametric-demo.html">Try the interactive demo &rarr;</a>
-        </footer>
       </article>
 
       <article>
         {% image "/assets/features/integration.svg", "Seamless Integration", "feature-icon", "", "lazy" %}
         <h3>Seamless Integration</h3>
         <p>
-          Import 3D models (.step format) or work with layered manufacturing
-          formats including .gds for semiconductors and .dxf for PCB layouts.
+          Import .step, .gds and .dxf files, or CadQuery scripts. Export
+          Touchstone files.
         </p>
       </article>
     </div>
   </div>
 </section>
 
-<section>
+<section id="solver">
   <div class="container" data-theme="light">
+    <h2>What It Solves</h2>
+    <p>Full 3D vector finite element solutions of the electric field.</p>
+
+    <div class="grid grid-2">
+      <article>
+        <h3>Ports</h3>
+        <p>Lumped, wave and layout ports.</p>
+      </article>
+
+      <article>
+        <h3>Materials</h3>
+        <p>Built-in library or your own, with lossy dielectrics and metals.</p>
+      </article>
+
+      <article>
+        <h3>Open Boundaries</h3>
+        <p>Radiation boundaries and optional PML for antennas.</p>
+      </article>
+
+      <article>
+        <h3>Results</h3>
+        <p>Fields, S-parameters and 2D or 3D far-field patterns.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="interface" class="features-section">
+  <div class="container" data-theme="dark">
     <h2>Clean Interface</h2>
     <p>All the functionality is a couple of clicks away...</p>
     <div class="image-container">
@@ -84,33 +114,47 @@ scripts: true
   </div>
 </section>
 
-<section>
+<section id="workflow">
   <div class="container" data-theme="light">
-    <h2>State-of-the-Art Accuracy</h2>
-    <p>
-      WaveFEM delivers exceptional accuracy across a wide range of
-      electromagnetic simulation scenarios. Our advanced finite element method
-      implementation consistently produces results that match those from
-      industry-standard commercial software packages.
-    </p>
+    <h2>From Model to Results</h2>
+    <p>Every simulation follows the same seven steps.</p>
 
-    <div class="grid">
-      <article>
-        <p><strong>Waveguide Filter Comparison</strong></p>
-        {% image "/assets/comparisons/Waveguide Filter Comparison.svg", "Waveguide Filter Comparison", "comparison-img", "", "lazy" %}
-      </article>
-
-      <article>
-        <p><strong>Horn Antenna Radiation Pattern Comparison</strong></p>
-        {% image "/assets/comparisons/Horn Directivity Comparison.svg", "Horn Directivity Comparison", "comparison-img", "", "lazy" %}
-      </article>
-    </div>
-
-    <p>See more examples <a href="/examples.html">here</a></p>
+    <ol class="workflow-steps">
+      <li>
+        <strong>Model</strong>
+        Import a STEP, DXF, GDS or Python file. Planar files get a layer
+        stack-up.
+      </li>
+      <li>
+        <strong>Materials</strong>
+        Create materials and assign one to every solid.
+      </li>
+      <li>
+        <strong>Ports</strong>
+        Add wave ports on faces, sketch lumped ports, or draw layout ports.
+      </li>
+      <li>
+        <strong>Settings</strong>
+        Set the refinement frequency and mesh options, then add frequency sweeps
+        and far-field sweeps.
+      </li>
+      <li>
+        <strong>Validate and run</strong>
+        Check the setup, run it, and follow the solver progress in the console.
+      </li>
+      <li>
+        <strong>Results</strong>
+        Plot fields, S-parameters and patterns, and export what you need.
+      </li>
+      <li>
+        <strong>Iterate</strong>
+        Copy a variant, change the design and compare results on the same axes.
+      </li>
+    </ol>
   </div>
 </section>
 
-<section class="features-section">
+<section id="video" class="features-section">
   <div class="container" data-theme="dark">
     <h2>See It in Action</h2>
     <video
@@ -126,8 +170,27 @@ scripts: true
   </div>
 </section>
 
-<section>
-  <div class="container">
+<section id="accuracy">
+  <div class="container" data-theme="light">
+    <h2>State-of-the-Art Accuracy</h2>
+    <p>
+      WaveFEM is validated against Ansys HFSS on ten examples: five filters,
+      three antennas and two transmission lines. Each is solved in both tools
+      with the same geometry, the same adaptive refinement target (maximum
+      &Delta;S of 0.02) and the same frequency sweep. The report compares
+      S-parameter magnitude and phase, far-field realized gain, adaptive mesh
+      convergence and runtime.
+    </p>
+
+    <a href="/assets/comparison_report.pdf" class="pdf-link">
+      {% image "/assets/comparison_report.webp", "First page of the WaveFEM vs. HFSS comparison report", "pdf-thumb", "", "lazy" %}
+      <strong>Read the WaveFEM vs. HFSS Validation Report (PDF)</strong>
+    </a>
+  </div>
+</section>
+
+<section id="applications" class="features-section">
+  <div class="container" data-theme="dark">
     <h2>Applications</h2>
     <p>
       WaveFEM is designed to handle a wide range of electromagnetic simulation
@@ -154,18 +217,48 @@ scripts: true
       <article>
         <h3>Antenna Design</h3>
         <p>
-          Design patch antennas and antenna arrays with radiation pattern
-          prediction and array analysis.
+          Design patch antennas, dielectric resonator and Vivaldi antennas, and
+          antenna arrays with radiation pattern prediction.
         </p>
       </article>
 
       <article>
         <h3>Waveguide Components</h3>
         <p>
-          Simulate bandpass filters and multiplexers with precise S-parameter
-          calculations for satellite and radar systems.
+          Simulate bandpass filters, adapters and multiplexers with precise
+          S-parameter calculations for satellite and radar systems.
         </p>
       </article>
+    </div>
+  </div>
+</section>
+
+<section id="documentation">
+  <div class="container" data-theme="light">
+    <h2>Documentation</h2>
+    <div class="doc-grid">
+      <a href="/assets/manual.pdf" class="pdf-link">
+        {% image "/assets/manual.webp", "First page of the WaveFEM manual", "pdf-thumb", "", "lazy" %}
+        <strong>WaveFEM User Manual (PDF)</strong>
+      </a>
+      <div>
+        <p>
+          The user manual takes you from importing a model to exporting results.
+          It covers:
+        </p>
+        <ul>
+          <li>Installation and a tour of the interface</li>
+          <li>How the solver works</li>
+          <li>Importing STEP, DXF, GDS and Python models</li>
+          <li>Materials, ports and simulation settings</li>
+          <li>Running simulations, plotting and exporting results</li>
+          <li>Design variants</li>
+          <li>
+            Worked examples: a horn antenna, a microstrip filter and a scripted
+            waveguide bend
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>

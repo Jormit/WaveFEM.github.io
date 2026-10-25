@@ -131,12 +131,6 @@ article:hover {
   vertical-align: middle;
 }
 
-.comparison-img {
-  width: 700px;
-  max-width: 100%;
-  height: auto;
-}
-
 .nav-buttons {
   display: flex;
   gap: 0.5rem;
@@ -190,150 +184,95 @@ button:hover,
   font-weight: 500;
 }
 
-.split-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 520px;
-  border: 1px solid var(--pico-table-border-color, #dde2e7);
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.viewport-panel {
-  position: relative;
-  overflow: hidden;
-  min-height: 400px;
-}
-
-.viewport-panel canvas {
-  display: block;
-  width: 100% !important;
-  height: 100% !important;
-}
-
-.code-panel {
+.pdf-link {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  border-left: 1px solid var(--pico-table-border-color, #dde2e7);
-}
-
-.code-header {
-  display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0.35rem 0.6rem;
-  background: var(--pico-card-sectioning-background-color, #f9fafb);
-  border-bottom: 1px solid var(--pico-table-border-color, #dde2e7);
-  flex-shrink: 0;
+  gap: 0.75rem;
+  text-align: center;
+  text-decoration: none;
 }
 
-.code-panel pre {
+.pdf-thumb {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--pico-muted-border-color);
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  transition: transform 0.15s ease;
+}
+
+.pdf-link:hover .pdf-thumb {
+  transform: translateY(-3px);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 1rem;
+}
+
+.hero-text .hero-sub {
+  font-size: 1.1rem;
+}
+
+.workflow-steps {
+  list-style: none;
+  counter-reset: step;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  padding: 0;
+}
+
+.workflow-steps li {
+  counter-increment: step;
   margin: 0;
-  padding: 0.5rem 0.65rem;
-  flex: 1;
-  overflow: auto;
+  padding: 1rem;
+  border: 1px solid var(--pico-muted-border-color);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.55);
 }
 
-.code-panel code {
-  font-size: 0.65rem;
-  line-height: 1.45;
-  background: transparent !important;
-  padding: 0 !important;
-}
-
-#sliders.grid {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.4rem 1.5rem;
-}
-
-.slider-row {
-  display: flex;
+.workflow-steps li::before {
+  content: counter(step);
+  display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-bottom: 0.5rem;
+  border-radius: 50%;
+  background: var(--pico-primary);
+  color: var(--pico-primary-inverse);
+  font-weight: 700;
 }
 
-.slider-row label {
-  min-width: 90px;
-  flex-shrink: 0;
+.workflow-steps li strong {
+  display: block;
 }
 
-.slider-row input[type="range"] {
-  flex: 1;
-  min-width: 80px;
+.doc-grid {
+  display: grid;
+  grid-template-columns: minmax(200px, 320px) 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
-.slider-val {
-  min-width: 40px;
-  text-align: right;
-  font-weight: 600;
-  color: var(--pico-primary);
-}
-
-.mobile-tabs {
-  display: none;
-}
-
-@media (max-width: 900px) {
-  .mobile-tabs {
-    display: flex;
-    border: 1px solid var(--pico-table-border-color, #dde2e7);
-    border-bottom: none;
-    border-radius: 8px 8px 0 0;
-    overflow: hidden;
-  }
-
-  .mobile-tab {
-    flex: 1;
-    padding: 0.5rem;
-    border: none;
-    background: var(--pico-card-sectioning-background-color, #f9fafb);
-    color: var(--pico-muted-color);
-    font-size: 0.85rem;
-    font-weight: 500;
-    cursor: pointer;
-  }
-
-  .mobile-tab.active {
-    background: var(--pico-primary);
-    color: var(--pico-primary-inverse, #fff);
-  }
-
-  .mobile-tab:not(.active):hover {
-    background: var(--pico-card-background-color, #eef0f3);
-  }
-
-  .split-layout {
+@media (max-width: 768px) {
+  .doc-grid {
     grid-template-columns: 1fr;
-    height: auto;
-    border-radius: 0 0 8px 8px;
   }
 
-  .code-panel {
-    border-left: none;
-    border-top: 1px solid var(--pico-table-border-color, #dde2e7);
-  }
-
-  .viewport-panel,
-  .code-panel {
+  .nav-links {
     display: none;
   }
+}
 
-  .viewport-panel.active,
-  .code-panel.active {
-    display: flex;
-  }
-
-  .viewport-panel {
-    min-height: 350px;
-    height: 55vh;
-  }
-
-  .code-panel pre {
-    max-height: 55vh;
-  }
-
-  #sliders.grid {
-    grid-template-columns: 1fr;
-  }
+.grid.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
