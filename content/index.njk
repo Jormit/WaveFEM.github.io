@@ -63,37 +63,8 @@ scripts: true
   </div>
 </section>
 
-<section id="solver">
-  <div class="container" data-theme="light">
-    <h2>What It Solves</h2>
-    <p>Full 3D vector finite element solutions of the electric field.</p>
-
-    <div class="grid grid-2">
-      <article>
-        <h3>Ports</h3>
-        <p>Lumped, wave and layout ports.</p>
-      </article>
-
-      <article>
-        <h3>Materials</h3>
-        <p>Built-in library or your own, with lossy dielectrics and metals.</p>
-      </article>
-
-      <article>
-        <h3>Open Boundaries</h3>
-        <p>Radiation boundaries and optional PML for antennas.</p>
-      </article>
-
-      <article>
-        <h3>Results</h3>
-        <p>Fields, S-parameters and 2D or 3D far-field patterns.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="interface" class="features-section">
-  <div class="container" data-theme="dark">
+<section id="interface">
+  <div class="container">
     <h2>Clean Interface</h2>
     <p>All the functionality is a couple of clicks away...</p>
     <div class="image-container">
@@ -150,44 +121,6 @@ scripts: true
   </div>
 </section>
 
-<section id="video" class="features-section">
-  <div class="container" data-theme="dark">
-    <h2>See It in Action</h2>
-    <video
-      autoplay
-      muted
-      loop
-      playsinline
-      disablepictureinpicture
-      style="max-width:100%;height:auto;border-radius:10px;pointer-events:none"
-    >
-      <source src="/assets/video.mp4" type="video/mp4" />
-    </video>
-  </div>
-</section>
-
-<section id="accuracy">
-  <div class="container" data-theme="light">
-    <h2>State-of-the-Art Accuracy</h2>
-    <div class="doc-grid">
-      <a href="/assets/comparison_report.pdf" class="pdf-link">
-        {% image "/assets/comparison_report.webp", "First page of the WaveFEM vs. HFSS comparison report", "pdf-thumb", "", "lazy" %}
-        <strong>Read the WaveFEM vs. HFSS Validation Report (PDF)</strong>
-      </a>
-      <div>
-        <p>
-          WaveFEM is validated against Ansys HFSS on a growing set of examples,
-          including filters, antennas, transmission lines and planar circuits.
-          Each is solved in both tools with the same geometry, the same adaptive
-          refinement target (maximum &Delta;S of 0.02) and the same frequency
-          sweep. The report compares S-parameter magnitude and phase, far-field
-          realized gain, adaptive mesh convergence and runtime.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section id="applications" class="features-section">
   <div class="container" data-theme="dark">
     <h2>Applications</h2>
@@ -235,27 +168,21 @@ scripts: true
 <section id="documentation">
   <div class="container" data-theme="light">
     <h2>Documentation</h2>
-    <div class="doc-grid">
-      <a href="/assets/manual.pdf" class="pdf-link">
-        {% image "/assets/manual.webp", "First page of the WaveFEM manual", "pdf-thumb", "", "lazy" %}
-        <strong>WaveFEM User Manual (PDF)</strong>
-      </a>
-      <div>
+    <div class="grid">
+      <article>
+        <h3><a href="/assets/manual.pdf">User Manual (PDF)</a></h3>
         <p>
-          The user manual takes you from importing a model to exporting results.
-          It covers:
+          From importing a model to exporting results, with worked examples.
         </p>
-        <ul>
-          <li>Installation and a tour of the interface</li>
-          <li>How the solver works</li>
-          <li>Importing STEP, DXF, GDS and Python models</li>
-          <li>Materials, ports and simulation settings</li>
-          <li>Running simulations, plotting and exporting results</li>
-          <li>Design variants</li>
-          <li>Letting an AI agent build and run simulations</li>
-          <li>Worked examples you can follow end to end</li>
-        </ul>
-      </div>
+      </article>
+
+      <article>
+        <h3><a href="/assets/comparison_report.pdf">Validation Report (PDF)</a></h3>
+        <p>
+          WaveFEM compared against Ansys HFSS on filters, antennas and planar
+          circuits.
+        </p>
+      </article>
     </div>
   </div>
 </section>
