@@ -169,19 +169,22 @@ scripts: true
 <section id="accuracy">
   <div class="container" data-theme="light">
     <h2>State-of-the-Art Accuracy</h2>
-    <p>
-      WaveFEM is validated against Ansys HFSS on ten examples: five filters,
-      three antennas and two transmission lines. Each is solved in both tools
-      with the same geometry, the same adaptive refinement target (maximum
-      &Delta;S of 0.02) and the same frequency sweep. The report compares
-      S-parameter magnitude and phase, far-field realized gain, adaptive mesh
-      convergence and runtime.
-    </p>
-
-    <a href="/assets/comparison_report.pdf" class="pdf-link">
-      {% image "/assets/comparison_report.webp", "First page of the WaveFEM vs. HFSS comparison report", "pdf-thumb", "", "lazy" %}
-      <strong>Read the WaveFEM vs. HFSS Validation Report (PDF)</strong>
-    </a>
+    <div class="doc-grid">
+      <a href="/assets/comparison_report.pdf" class="pdf-link">
+        {% image "/assets/comparison_report.webp", "First page of the WaveFEM vs. HFSS comparison report", "pdf-thumb", "", "lazy" %}
+        <strong>Read the WaveFEM vs. HFSS Validation Report (PDF)</strong>
+      </a>
+      <div>
+        <p>
+          WaveFEM is validated against Ansys HFSS on a growing set of examples,
+          including filters, antennas, transmission lines and planar circuits.
+          Each is solved in both tools with the same geometry, the same adaptive
+          refinement target (maximum &Delta;S of 0.02) and the same frequency
+          sweep. The report compares S-parameter magnitude and phase, far-field
+          realized gain, adaptive mesh convergence and runtime.
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -249,10 +252,8 @@ scripts: true
           <li>Materials, ports and simulation settings</li>
           <li>Running simulations, plotting and exporting results</li>
           <li>Design variants</li>
-          <li>
-            Worked examples: a horn antenna, a microstrip filter and a scripted
-            waveguide bend
-          </li>
+          <li>Letting an AI agent build and run simulations</li>
+          <li>Worked examples you can follow end to end</li>
         </ul>
       </div>
     </div>
