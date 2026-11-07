@@ -22,22 +22,22 @@ const images = [
   {
     src: "assets/gui/gui5.webp",
     title: "Automatic Adaptive Meshing",
-    alt: "Automatic Adaptive Meshing",
+    alt: "Adaptive Mesh Refinement",
   },
   {
     src: "assets/gui/gui6.webp",
     title: "Integrated Stackup Editor",
-    alt: "Integrated Stackup Editor",
+    alt: "Stackup Editor",
   },
   {
     src: "assets/gui/gui7.webp",
     title: "2D port solutions",
-    alt: "2D port solutions",
+    alt: "Layout port editor",
   },
   {
     src: "assets/gui/gui8.webp",
-    title: "SBR Ray Tracing (Coming Soon)",
-    alt: "SBR Ray Tracing (Coming Soon)",
+    title: "Port Sketcher",
+    alt: "Port Sketcher",
   },
 ];
 
